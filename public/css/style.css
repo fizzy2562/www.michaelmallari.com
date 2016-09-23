@@ -1,0 +1,56 @@
+/*
+
+*/
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url('/fonts/glyphicons-halflings-regular.eot');
+  src: url('/fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('/fonts/glyphicons-halflings-regular.woff') format('woff'), url('/fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+}
+@font-face {
+  font-family: 'Mono Social Icons Font';
+  font-style: normal;
+  font-weight: normal;
+  src: url('/fonts/MonoSocialIconsFont-1.10.eot');
+  src: url('/fonts/MonoSocialIconsFont-1.10.eot?#iefix') format('embedded-opentype'), url('/fonts/MonoSocialIconsFont-1.10.woff') format('woff'), url('/fonts/MonoSocialIconsFont-1.10.ttf') format('truetype'), url('/fonts/MonoSocialIconsFont-1.10.svg#MonoSocialIconsFont') format('svg');
+  src: url('/fonts/MonoSocialIconsFont-1.10.ttf') format('truetype');
+}
+.social-icon {
+  font-family: 'Mono Social Icons Font';
+  -webkit-text-rendering: optimizeLegibility;
+  -moz-text-rendering: optimizeLegibility;
+  -ms-text-rendering: optimizeLegibility;
+  -o-text-rendering: optimizeLegibility;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -ms-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+html,
+body {
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  background: #f2f2f2;
+  /* PMS Cool Gray 8 U @12% */
+}
+#page-container {
+  height: 100%;
+  width: 100%;
+}
+@media (min-width: 1200px) {
+  #header .container {
+    max-width: 1200px;
+    width: 84%;
+  }
+}
+* {
+  font-family: 'Open Sans', Helvetica, sans-serif;
+}
+#content {
+  min-height: 1024px;
+  padding-top: 144px;
+}
