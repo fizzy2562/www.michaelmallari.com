@@ -6,10 +6,13 @@ PMS 2028 C #eb3300
 Secondary:
 PMS 2229 C #009cb6
 
-Monochromatic:
+Monochromatic 5435 C:
 PMS 5435 C #a6bbc8
-PMS 545 C #c6dae7
 PMS 7547 C #131e29
+PMS 431 C #5b6770
+
+Misc:
+PMS 545 C #c6dae7
 
 */
 @font-face {
@@ -38,6 +41,10 @@ PMS 7547 C #131e29
   -o-font-smoothing: antialiased;
   font-smoothing: antialiased;
 }
+* {
+  color: #5b6770;
+  font-family: 'Raleway', 'Helvetica Neue', sans-serif;
+}
 html,
 body {
   height: 100%;
@@ -45,18 +52,72 @@ body {
   padding: 0px;
 }
 body {
-  background: #f2f2f2;
-  /* PMS Cool Gray 8 U @12% */
+  background: #fff;
+}
+a {
+  color: #009cb6;
+  text-decoration: none;
+}
+a:hover {
+  color: #006272;
+  /* PMS 3155 C */
+  text-decoration: underline;
 }
 #page-container {
   height: 100%;
   width: 100%;
 }
-@media (min-width: 1200px) {
-  #header .container {
-    max-width: 1200px;
-    width: 84%;
-  }
+#page-container > #header {
+  background: #fff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+}
+#page-container > #header .logo {
+  height: 72px;
+  width: auto;
+}
+#app-name {
+  display: inline-block;
+  float: right;
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+  width: 52%;
+}
+#app-name h2 {
+  color: #009cb6;
+  display: block;
+  font-size: 0.7em;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  margin: 0px;
+  padding: 2em 0em 0em 0em;
+}
+#app-name h3 {
+  color: #eb3300;
+  display: block;
+  font-family: 'Montserrat', 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1.4em;
+  font-weight: 700;
+  margin: 0px;
+  padding: 0px;
+}
+#hamburger-menu {
+  background: none;
+  border: none;
+  float: right;
+  height: 72px;
+  margin: 0px;
+  padding: 0px;
+  width: 72px;
+}
+#hamburger-menu .glyphicon-menu-hamburger {
+  color: #009cb6;
+  font-size: 1.8em;
+  margin: 0px;
+  padding: 0px;
 }
 * {
   font-family: 'Open Sans', Helvetica, sans-serif;
@@ -65,7 +126,86 @@ body {
   min-height: 1024px;
   padding-top: 144px;
 }
-body > #page-container > #footer {
-  background: #131e29;
-  min-height: 100px;
+#smart-creative,
+#about {
+  padding: 2em 0em;
+}
+#smart-creative {
+  background: #009cb6;
+}
+#about {
+  background: #ebe8e5;
+  /* PMS Warm Gray 1 C 50% */
+}
+#smart-creative img {
+  height: auto;
+  width: 120px;
+}
+#smart-creative h2,
+#about h2,
+#about h3 {
+  color: #131e29;
+  display: block;
+  font-family: 'Montserrat', 'Helvetica Neue', sans-serif;
+  font-size: 1.5em;
+  font-weight: 700;
+  line-height: 1.2em;
+  margin: 0px;
+  text-align: center;
+}
+#about h3 {
+  font-family: 'Raleway', 'Helvetica Neue', sans-serif;
+  font-weight: 200;
+}
+#smart-creative h2,
+#about h3 {
+  margin-bottom: 1em;
+}
+#smart-creative h2 {
+  color: #fff;
+}
+#smart-creative p,
+#about p {
+  font-size: 0.88em;
+  font-weight: 400;
+  line-height: 1.9em;
+  margin: 0em auto 1.9em auto;
+  text-align: center;
+  width: 70%;
+}
+#smart-creative p {
+  color: #fff;
+}
+#smart-creative .byline {
+  font-weight: 600;
+  line-height: 1.4em;
+}
+#smart-creative .byline,
+#about p {
+  margin-bottom: 0px;
+}
+#connect {
+  text-align: center;
+}
+#connect span {
+  color: #eb3300;
+  font-weight: 900;
+  line-height: 72px;
+}
+#connect span a {
+  font-weight: 400;
+}
+#connect ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+#connect li {
+  display: inline-block;
+  margin: 0em 0.25em;
+  padding: 0px;
+}
+#connect .social .icon {
+  height: 24px;
+  width: auto;
 }
