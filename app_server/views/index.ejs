@@ -5,17 +5,17 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 		<meta name="apple-mobile-web-app-capable" content="yes">
-		<title><%= title %></title>
-		<link rel="apple-touch-icon" href="/img/icon.png">
-		<link rel="shortcut icon" href="/img/icon.png">
-		<meta name="description" content="">
-		<link rel="canonical" href="http://localhost">
+		<title><%= html.head.title %></title>
+		<link rel="apple-touch-icon" href="/img/logo-mm-pms2028c.png">
+		<link rel="shortcut icon" href="/img/icon-mm-transparent.png">
+		<meta name="description" content="<%= html.head.description %>">
+		<link rel="canonical" href="<%= html.head.canonical %>">
 		<meta name="twitter:card" content="summary">
-		<meta name="twitter:site" content="@Twitter">
-		<meta property="og:title" content="<%= title %>">
+		<meta name="twitter:site" content="@MichaelMallari">
+		<meta property="og:title" content="<%= html.head.title %>">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="http://localhost">
-		<meta property="og:description" content="">
+		<meta property="og:url" content="<%= html.head.canonical %>">
+		<meta property="og:description" content="<%= html.head.description %>">
 		<script src="/js/angular.min.js"></script>
 		<script src="/js/app-angular.js"></script>
 		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
@@ -36,8 +36,7 @@
 
 
 			<div id="content">
-				<input ng-model="myInput" />
-				<h1>Hello {{ myInput }}</h1>
+
 			</div>
 <!--/#page-container > #content -->
 
