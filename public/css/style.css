@@ -59,19 +59,16 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 99;
-}
-#page-container > #header .logo {
-  height: 72px;
-  width: auto;
+  z-index: 98;
 }
 #app-name {
   display: inline-block;
   float: right;
+  height: 72px;
   margin: 0px;
   padding: 0px;
   text-align: center;
-  width: 52%;
+  width: 100%;
 }
 #app-name h2 {
   color: #009cb6;
@@ -93,14 +90,23 @@ body {
   margin: 0px;
   padding: 0px;
 }
+#page-container > #header .logo {
+  height: 72px;
+  left: 0;
+  position: absolute;
+  width: auto;
+  z-index: 99;
+}
 #hamburger-menu {
   background: none;
   border: none;
-  float: right;
   height: 72px;
   margin: 0px;
   padding: 0px;
+  position: absolute;
+  right: 0;
   width: 72px;
+  z-index: 99;
 }
 #hamburger-menu .glyphicon-menu-hamburger {
   color: #5b6770;
@@ -116,19 +122,10 @@ body {
     width: 72px;
   }
   #app-name {
-    border: solid 1px #000;
-    bottom: 0;
     display: none;
-    float: none;
-    height: 72px;
-    left: 0;
-    position: absolute;
-    -webkit-transform: rotate(-90deg);
-    -moz-transform: rotate(-90deg);
-    width: 240px;
   }
   #hamburger-menu {
-    float: none;
+    display: none;
   }
 }
 * {
@@ -141,12 +138,18 @@ body {
   padding-top: 72px;
 }
 h1,
+h2,
+h3,
+p {
+  text-align: center;
+}
+h1,
 h2 {
   font-size: 1.6em;
   font-family: 'Merriweather Sans', 'Helvetica Neue', sans-serif;
   font-weight: 700;
   letter-spacing: -0.02em;
-  line-height: 1.2em;
+  line-height: 1.3em;
   margin: 0px;
   padding: 0px;
 }
@@ -155,20 +158,14 @@ h3 {
   font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
   font-weight: 300;
   letter-spacing: -0.02em;
-  line-height: 1.2em;
-  margin: 0em 0em 1.6em 0em;
+  line-height: 1.3em;
+  margin: 0em 0em 1.5em 0em;
   padding: 0px;
 }
 p {
   font-size: 0.85em;
   line-height: 1.7em;
   margin-bottom: 1.7em;
-}
-h1,
-h2,
-h3,
-p {
-  text-align: center;
 }
 strong {
   font-weight: 700;
@@ -227,7 +224,37 @@ a:hover {
   height: 30px;
   width: auto;
 }
+@media (min-width: 375px) {
+  h1,
+  h2 {
+    font-size: 1.8em;
+  }
+  h3 {
+    font-size: 1.8em;
+  }
+  p {
+    font-size: 1em;
+  }
+}
+@media (min-width: 414px) {
+  h1,
+  h2 {
+    font-size: 2em;
+  }
+  h3 {
+    font-size: 2em;
+  }
+  p {
+    font-size: 1.1em;
+  }
+}
 @media (min-width: 992px) {
+  h1,
+  h2,
+  h3,
+  p {
+    text-align: left;
+  }
   h1,
   h2 {
     font-size: 2.6em;
