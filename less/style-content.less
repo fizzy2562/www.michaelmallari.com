@@ -1,15 +1,110 @@
 * {
-	font-family: 'Open Sans', Helvetica, sans-serif;
+	color: #5b6770;
+	font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+	font-weight: 400;
 }
 #content {
-	min-height: 1024px;
-	padding-top: 144px;
+	min-height: 640px;
+	padding-top: 72px;
+}
+h1,
+h2 {
+	font-size: 1.6em;
+	font-family: 'Merriweather Sans', 'Helvetica Neue', sans-serif;
+	font-weight: 700;
+	letter-spacing: -0.02em;
+	line-height: 1.2em;
+	margin: 0px;
+	padding: 0px;
+}
+h3 {
+	font-size: 1.6em;
+	font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+	font-weight: 300;
+	letter-spacing: -0.02em;
+	line-height: 1.2em;
+	margin: 0em 0em 1.6em 0em;
+	padding: 0px;
+}
+p {
+	font-size: 0.85em;
+	line-height: 1.7em;
+	margin-bottom: 1.7em;
+}
+h1,
+h2,
+h3,
+p {
+	text-align: center;
+}
+strong {
+	font-weight: 700;
+}
+a {
+	color: #009cb6;
+	text-decoration: none;
+}
+a:hover {
+	color: #006272;	/* PMS 3155 C */
+	text-decoration: underline;
+}
+.section-content * {
+	color: #fff;
 }
 
 
 
 
 
+
+
+.section-content {
+	background: #009cb6;
+	margin-bottom: 5em;
+	min-height: 500px;
+	padding: 2.4em;
+}
+.section-img {
+	border: solid 1px #000;
+	height: 500px;
+	width: 50%;
+}
+.overlap {
+	position: relative;
+	left: 50%;
+	top: -400px;
+}
+.section-content.reverse-layout {
+	top: -200px;
+}
+.section-img.reverse-layout.overlap {
+	left: 0px;
+	position: none;
+	top: -200px;
+}
+
+
+#content-4 .section-content {
+
+}
+#content-5 .section-content {
+	background: #131e29;
+}
+#content-5 ul {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+#content-5 li {
+	display: inline-block;
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+#content-5 img {
+	height: 30px;
+	width: auto;
+}
 
 
 
@@ -63,7 +158,38 @@
 
 }
 @media (min-width: 992px) {
-
+	h1,
+	h2 {
+		font-size: 2.6em;
+	}
+	h3 {
+		font-size: 2.6em;
+	}
+	p {
+		font-size: 0.9em;
+		line-height: 1.7em;
+		margin-bottom: 1.6em;
+	}
+	strong {
+		font-weight: 800;
+	}
+	#content {
+		left: 72px;
+		position: relative;
+	}
+	.section-content {
+		margin-bottom: 20em;
+		padding: 7em;
+	}
+	#content-1 .section-content {
+		width: 90%;
+	}
+	#content-2 .section-content {
+		width: 60%;
+	}
+	#content-3 .section-content {
+		width: 75%;
+	}
 }
 @media (min-width: 992px) and (max-width: 1023px)  {
 

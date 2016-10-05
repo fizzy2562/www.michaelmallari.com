@@ -20,18 +20,20 @@
 #app-name h2 {
 	color: #009cb6;
 	display: block;
+	font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
 	font-size: 0.7em;
 	font-weight: 400;
-	letter-spacing: 0.02em;
+	letter-spacing: 0.025em;
 	margin: 0px;
 	padding: 2em 0em 0em 0em;
 }
 #app-name h3 {
 	color: #eb3300;
 	display: block;
-	font-family: 'Montserrat', 'Open Sans', 'Helvetica Neue', sans-serif;
+	font-family: 'Merriweather Sans', 'Helvetica Neue', sans-serif;
 	font-size: 1.4em;
-	font-weight: 700;
+	font-weight: 800;
+	letter-spacing: -0.01em;
 	margin: 0px;
 	padding: 0px;
 }
@@ -45,8 +47,8 @@
 	width: 72px;
 }
 #hamburger-menu .glyphicon-menu-hamburger {
-	color: #009cb6;
-	font-size: 1.8em;
+	color: #5b6770; /* PMS 431 C */
+	font-size: 1.7em;
 	margin: 0px;
 	padding: 0px;
 }
@@ -102,7 +104,25 @@
 
 }
 @media (min-width: 992px) {
-
+	#page-container > #header {
+		border-right: solid 1px #f3f3f3;
+		height: 100%;
+		width: 72px;
+	}
+	#app-name { border: solid 1px #000;
+		bottom: 0;
+		display: none;
+		float: none;
+		height: 72px;
+		left: 0;
+		position: absolute;
+		-webkit-transform: rotate(-90deg); 
+		-moz-transform: rotate(-90deg);
+		width: 240px;
+	}
+	#hamburger-menu {
+		float: none;
+	}
 }
 @media (min-width: 992px) and (max-width: 1023px)  {
 
