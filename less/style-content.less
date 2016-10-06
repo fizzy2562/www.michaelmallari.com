@@ -68,22 +68,11 @@ a:hover {
 	width: 100%;
 }
 .overlap {
-	position: relative;
-	left: 50%;
-	top: -400px;
-}
-.section-content.reverse-layout {
-	top: -200px;
-}
-.section-img.reverse-layout.overlap {
-	left: 0px;
-	position: none;
-	top: -200px;
-}
 
-
-#content-4 .section-content {
-
+}
+#content-1 .overlap div {
+	background: #f2f0ee; /* PMS Warm Gray 1 C 33% */
+	padding: 3em;
 }
 #content-5 .section-content {
 	background: #131e29;
@@ -187,11 +176,14 @@ a:hover {
 		text-align: left;
 	}
 	h1,
-	h2 {
-		font-size: 2.6em;
-	}
+	h2,
 	h3 {
-		font-size: 2.6em;
+		font-size: 2em;
+	}
+	.overlap h1,
+	.overlap h2,
+	.overlap h3 {
+		font-size: 1em;
 	}
 	p {
 		font-size: 0.9em;
@@ -206,11 +198,21 @@ a:hover {
 		position: relative;
 	}
 	.section-content {
-		margin-bottom: 20em;
-		padding: 7em;
+		padding: 5.7em;
+	}
+	.overlap {
+		position: relative;
+		left: 57%;
+		top: -500px;
+		width: 43%;
 	}
 	#content-1 .section-content {
+		padding-right: 25em;
 		width: 90%;
+	}
+	#content-1 .section-img {
+		height: auto;
+		width: 50%;
 	}
 	#content-2 .section-content {
 		width: 60%;
@@ -226,7 +228,17 @@ a:hover {
 
 }
 @media (min-width: 1024px) {
-
+	.section-content {
+		padding: 6em;
+	}
+	#content-1 .section-content {
+		padding-right: 26em;
+	}
+	.overlap {
+		left: 59%;
+		top: -500px;
+		width: 41%;
+	}
 }
 @media (min-width: 1024px) and (max-width: 1199px) {
 
@@ -235,5 +247,18 @@ a:hover {
 
 }
 @media (min-width: 1200px) {
-
+	.overlap h1,
+	.overlap h2,
+	.overlap h3 {
+		font-size: 1.2em;
+	}
+	.section-content {
+		padding: 6.5em;
+	}
+	#content-1 .section-content {
+		padding-right: 30em;
+	}
+	.overlap {
+		top: -450px;
+	}
 }
