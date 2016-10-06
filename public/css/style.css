@@ -164,8 +164,8 @@ h3 {
 }
 p {
   font-size: 0.85em;
-  line-height: 1.7em;
-  margin-bottom: 1.7em;
+  line-height: 1.6em;
+  margin-bottom: 2em;
 }
 strong {
   font-weight: 700;
@@ -184,14 +184,12 @@ a:hover {
 }
 .section-content {
   background: #009cb6;
-  margin-bottom: 5em;
   min-height: 500px;
   padding: 2.4em;
 }
 .section-img {
-  border: solid 1px #000;
-  height: 500px;
-  width: 50%;
+  height: auto;
+  width: 100%;
 }
 .overlap {
   position: relative;
@@ -235,6 +233,9 @@ a:hover {
   p {
     font-size: 1em;
   }
+  .section-content {
+    padding: 2.9em;
+  }
 }
 @media (min-width: 414px) {
   h1,
@@ -246,6 +247,9 @@ a:hover {
   }
   p {
     font-size: 1.1em;
+  }
+  .section-content {
+    padding: 3.2em;
   }
 }
 @media (min-width: 992px) {
