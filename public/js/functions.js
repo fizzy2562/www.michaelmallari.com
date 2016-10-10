@@ -1,4 +1,10 @@
 $(document).ready(function() {
+	$('.dribbble-shot a').each(function() {
+		$(this).height( $(this).width() * 0.75 );
+	});
+
+
+
 	if ($(window).width() < 375) {
 // alert("Window width < 375");
 
@@ -112,7 +118,13 @@ $(document).ready(function() {
 
 
 
-$(window).resize(function(){
+$(window).resize(function() {
+	$('.dribbble-shot a').each(function() {
+		$(this).height( $(this).width() * 0.75 );
+	});
+
+
+
 	if ($(window).width() < 375) {
 // alert("Window width < 375");
 
