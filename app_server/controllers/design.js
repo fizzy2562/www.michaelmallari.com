@@ -26,14 +26,14 @@ var renderDesign = function(req, res, responseBody) {
 };
 module.exports.design = function(req, res) {
 	var requestOptions;
-	var dribbbleShotsApi;
+	var dribbbleShotsAPI;
 	// if (process.env.NODE_ENV === 'production') {
-		dribbbleShotsApi = process.env.GET_DRIBBBLE_SHOTS;
+		dribbbleShotsAPI = process.env.GET_DRIBBBLE_SHOTS;
 	// }
 
 
 	requestOptions = {
-		url: dribbbleShotsApi,
+		url: dribbbleShotsAPI,
 		method: "GET",
 		json: {},
 		qs: {}
