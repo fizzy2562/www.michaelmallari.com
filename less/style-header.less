@@ -1,10 +1,40 @@
-#page-container > #header {
-	background: #fff;
+#nav-primary {
+	background: #131e29;
+	-moz-box-shadow: 0 0 12px 3px rgba(0,0,0,.25);
+		-webkit-box-shadow: 0 0 12px 3px rgba(0,0,0,.25);
+		-o-box-shadow: 0 0 12px 3px rgba(0,0,0,.25);
+		-ms-box-shadow: 0 0 12px 3px rgba(0,0,0,.25);
+		box-shadow: 0 0 12px 3px rgba(0,0,0,.25);
 	position: fixed;
-	top: 0;
+	bottom: 0;
 	width: 100%;
 	z-index: 98;
 }
+#nav-primary ul {
+	list-style: none;
+	margin: 0px auto;
+	padding: 0px;
+}
+#nav-primary li {
+	display: inline-block;
+	height: 60px;
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+	width: 60px;
+}
+#nav-primary img {
+	height: auto;
+	width: 60px;
+}
+
+
+
+
+
+
+
+
 #app-name {
 	display: inline-block;
 	float: right;
@@ -31,30 +61,6 @@
 	font-size: 1.4em;
 	font-weight: 800;
 	letter-spacing: -0.01em;
-	margin: 0px;
-	padding: 0px;
-}
-#page-container > #header .logo {
-	height: 72px;
-	left: 0;
-	position: absolute;
-	width: auto;
-	z-index: 99;
-}
-#hamburger-menu {
-	background: none;
-	border: none;
-	height: 72px;
-	margin: 0px;
-	padding: 0px;
-	position: absolute;
-	right: 0;
-	width: 72px;
-	z-index: 99;
-}
-#hamburger-menu .glyphicon-menu-hamburger {
-	color: #5b6770; /* PMS 431 C */
-	font-size: 1.7em;
 	margin: 0px;
 	padding: 0px;
 }
@@ -117,19 +123,23 @@
 
 }
 @media (min-width: 992px) {
-	#page-container > #header {
+	#nav-primary {
+		background: #fff;
 		border-right: solid 1px #f3f3f3;
+		-moz-box-shadow: none;
+			-webkit-box-shadow: none;
+			-o-box-shadow: none;
+			-ms-box-shadow: none;
+			box-shadow: none;
 		height: 100%;
 		width: 72px;
 	}
-	#app-name {
-		display: none;
+	#nav-primary li {
+		height: 72px;
+		width: 72px;
 	}
-	#page-container > #header .logo {
-
-	}
-	#hamburger-menu {
-		display: none;
+	#nav-primary img {
+		width: 72px;
 	}
 }
 @media (min-width: 992px) and (max-width: 1023px)  {
@@ -148,5 +158,22 @@
 
 }
 @media (min-width: 1200px) {
-
+		#nav-primary {
+		background: #fff;
+		border-right: solid 1px #f3f3f3;
+		-moz-box-shadow: none;
+			-webkit-box-shadow: none;
+			-o-box-shadow: none;
+			-ms-box-shadow: none;
+			box-shadow: none;
+		height: 100%;
+		width: 84px;
+	}
+	#nav-primary li {
+		height: 84px;
+		width: 84px;
+	}
+	#nav-primary img {
+		width: 84px;
+	}
 }
