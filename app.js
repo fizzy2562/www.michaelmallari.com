@@ -7,6 +7,7 @@ var bodyParser = require('body-parser');
 require('./app_server/models/db');
 
 var mainRoutes = require('./app_server/routes/main');
+var businessRoutes = require('./app_server/routes/business');
 var computationalRoutes = require('./app_server/routes/computational');
 var dataRoutes = require('./app_server/routes/data');
 var designRoutes = require('./app_server/routes/design');
@@ -26,6 +27,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', mainRoutes);
+app.use('/business', businessRoutes);
 app.use('/computational', computationalRoutes);
 app.use('/data', dataRoutes);
 app.use('/design', designRoutes);

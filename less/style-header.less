@@ -1,11 +1,11 @@
 #nav-primary {
 	background: #131e29;
 	bottom: 0;
-	-moz-box-shadow: 0 0 12px 3px rgba(0,0,0,.25);
-		-webkit-box-shadow: 0 0 12px 3px rgba(0,0,0,.25);
-		-o-box-shadow: 0 0 12px 3px rgba(0,0,0,.25);
-		-ms-box-shadow: 0 0 12px 3px rgba(0,0,0,.25);
-		box-shadow: 0 0 12px 3px rgba(0,0,0,.25);
+	-moz-box-shadow: 0 0 12px 6px rgba(0,0,0,.33);
+		-webkit-box-shadow: 0 0 12px 6px rgba(0,0,0,.33);
+		-o-box-shadow: 0 0 12px 6px rgba(0,0,0,.33);
+		-ms-box-shadow: 0 0 12px 6px rgba(0,0,0,.33);
+		box-shadow: 0 0 12px 6px rgba(0,0,0,.33);
 	position: fixed;
 	text-align: center;
 	width: 100%;
@@ -34,7 +34,9 @@
 
 
 
-
+#page-container > #header {
+	min-height: 72px;
+}
 
 
 #app-name {
@@ -148,6 +150,9 @@
 		height: 100%;
 		width: 72px;
 	}
+	#page-container > #header {
+		height: 72px;
+	}
 }
 @media (min-width: 992px) and (max-width: 1023px)  {
 
@@ -165,15 +170,7 @@
 
 }
 @media (min-width: 1200px) {
-		#nav-primary {
-		background: #fff;
-		border-right: solid 1px #f3f3f3;
-		-moz-box-shadow: none;
-			-webkit-box-shadow: none;
-			-o-box-shadow: none;
-			-ms-box-shadow: none;
-			box-shadow: none;
-		height: 100%;
+	#nav-primary {
 		width: 84px;
 	}
 	#nav-primary li {
@@ -182,5 +179,8 @@
 	}
 	#nav-primary img {
 		width: 84px;
+	}
+	#page-container > #header {
+		height: 84px;
 	}
 }

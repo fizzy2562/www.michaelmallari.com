@@ -1,32 +1,8 @@
 #page-container > #footer {
-	display: none;
+	background: #fff;
+	width: 100%;
 }
-#connect {
-	text-align: center;
-}
-#connect span {
-	color: #eb3300;
-	font-size: 1em;
-	font-weight: 800;
-	line-height: 72px;
-}
-#connect span a {
-	font-weight: 500;
-}
-#connect ul {
-	list-style: none;
-	margin: 0px;
-	padding: 0px;
-}
-#connect li {
-	display: inline-block;
-	margin: 0em 0.25em;
-	padding: 0px;
-}
-#connect .social .icon {
-	height: 24px;
-	width: auto;
-}
+
 
 
 
@@ -35,10 +11,7 @@
 
 }
 @media (min-width: 375px) {
-	#connect span {
-		color: #eb3300;
-		font-size: 1.1em;
-	}
+
 }
 @media (min-width: 375px) and (max-width: 413px) {
 
@@ -47,10 +20,7 @@
 
 }
 @media (min-width: 414px) {
-	#connect span {
-		color: #eb3300;
-		font-size: 1.2em;
-	}
+
 }
 @media (min-width: 414px) and (max-width: 506px) {
 
@@ -87,19 +57,13 @@
 }
 @media (min-width: 992px) {
 	#page-container > #footer {
-		left: 72px;
-		position: relative;
-	}
-	#connect {
 		border-left: solid 1px #f3f3f3;
 		height: 100%;
-		position: fixed;
 		right: 0;
+		position: fixed;
 		top: 0;
-		width: 84px;
-	}
-	#connect span {
-		display: none;
+		width: 72px;
+		z-index: 99;
 	}
 }
 @media (min-width: 992px) and (max-width: 1023px)  {
@@ -119,6 +83,6 @@
 }
 @media (min-width: 1200px) {
 	#page-container > #footer {
-		left: 84px;
+		width: 84px;
 	}
 }
