@@ -2,11 +2,13 @@
 <!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="720px" height="720px" viewBox="72 72 720 720" enable-background="new 72 72 720 720" xml:space="preserve">
-<rect x="312" y="312" fill="#C6DAE7" width="35.833" height="240"/>
-<rect x="312" y="521.834" fill="#C6DAE7" width="240" height="30.166"/>
-<rect x="359.833" y="406.499" fill="#C6DAE7" width="36" height="103.334"/>
-<rect x="503.82" y="383.167" fill="#C6DAE7" width="36.168" height="126.667"/>
-<rect x="407.829" y="353.832" fill="#A6BBC8" width="36" height="156.001"/>
-<rect x="455.825" y="443.833" fill="#C6DAE7" width="36" height="66"/>
+	 width="720px" height="720px" viewBox="0 0 720 720" enable-background="new 0 0 720 720" xml:space="preserve">
+<g>
+	<rect x="240" y="240" fill="#C6DAE7" width="35.833" height="240"/>
+	<rect x="240" y="449.834" fill="#C6DAE7" width="240" height="30.166"/>
+	<rect x="287.833" y="334.499" fill="#C6DAE7" width="36" height="103.334"/>
+	<rect x="431.82" y="311.167" fill="#C6DAE7" width="36.168" height="126.667"/>
+	<rect x="335.829" y="281.832" fill="#A6BBC8" width="36" height="156.001"/>
+	<rect x="383.825" y="371.833" fill="#C6DAE7" width="36" height="66"/>
+</g>
 </svg>
