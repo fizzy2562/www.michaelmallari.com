@@ -4,11 +4,11 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="720px" height="720px" viewBox="0 0 720 720" enable-background="new 0 0 720 720" xml:space="preserve">
 <g>
-	<rect x="240" y="240" fill="#C6DAE7" width="35.833" height="240"/>
-	<rect x="240" y="449.834" fill="#C6DAE7" width="240" height="30.166"/>
-	<rect x="287.833" y="334.499" fill="#C6DAE7" width="36" height="103.334"/>
-	<rect x="431.82" y="311.167" fill="#C6DAE7" width="36.168" height="126.667"/>
-	<rect x="335.829" y="281.832" fill="#A6BBC8" width="36" height="156.001"/>
-	<rect x="383.825" y="371.833" fill="#C6DAE7" width="36" height="66"/>
+	<rect x="251.04" y="247" fill="#C6DAE7" width="17.423" height="226"/>
+	<rect x="251.04" y="455.578" fill="#C6DAE7" width="217.92" height="17.422"/>
+	<rect x="285.873" y="333.335" fill="#C6DAE7" width="34.844" height="105.144"/>
+	<rect x="433.956" y="309.594" fill="#C6DAE7" width="35.004" height="128.884"/>
+	<rect x="335.233" y="279.746" fill="#A6BBC8" width="34.844" height="158.733"/>
+	<rect x="384.596" y="371.322" fill="#C6DAE7" width="34.844" height="67.156"/>
 </g>
 </svg>

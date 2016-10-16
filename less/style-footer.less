@@ -70,10 +70,9 @@
 	}
 	#hello {
 		display: inline-block;
-		font-size: 1.2em;
+		font-size: 0.9em;
 		height: 72px;
-		line-height: 1.2em;
-		padding-top: 1.4em;
+		line-height: 72px;
 		-moz-transform: rotate(90deg);
 			-webkit-transform: rotate(90deg);
 			-o-transform: rotate(90deg);
@@ -81,6 +80,9 @@
 			transform: rotate(90deg);
 		transform-origin: bottom left;
 		vertical-align: middle;
+	}
+	#hello span {
+		text-transform: uppercase;
 	}
 }
 @media (min-width: 992px) and (max-width: 1023px)  {
@@ -104,5 +106,6 @@
 	}
 	#hello {
 		height: 84px;
+		line-height: 84px;
 	}
 }

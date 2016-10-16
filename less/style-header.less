@@ -37,16 +37,12 @@
 #page-container > #header {
 	min-height: 72px;
 }
-
-
 #app-name {
 	display: inline-block;
-	float: right;
 	height: 72px;
 	margin: 0px;
-	padding: 0px;
+	padding: 1.45em 0em 0em 0em;
 	text-align: center;
-	width: 100%;
 }
 #app-name h2 {
 	color: #009cb6;
@@ -56,7 +52,6 @@
 	font-weight: 400;
 	letter-spacing: 0.025em;
 	margin: 0px;
-	padding: 2em 0em 0em 0em;
 }
 #app-name h3 {
 	color: #eb3300;
@@ -152,6 +147,12 @@
 	}
 	#page-container > #header {
 		height: 72px;
+		left: 72px;
+		position: relative;
+	}
+	#app-name {
+		height: 72px;
+		padding: 1.45em 0em 0em 1.45em;
 	}
 }
 @media (min-width: 992px) and (max-width: 1023px)  {
@@ -182,5 +183,10 @@
 	}
 	#page-container > #header {
 		height: 84px;
+		left: 84px;
+	}
+	#app-name {
+		height: 84px;
+		padding: 1.75em 0em 0em 1.75em;
 	}
 }
