@@ -18,6 +18,9 @@ var renderDesign = function(req, res, responseBody) {
 				title: 'Design (thinking + doing) | Michael Mallari, MBA, CSPO, CSM',
 				description: 'Done properly, design can transform businesses and be a source of competitive advantage. And the hallmark of a great designer is the ability to empathize with users through research.',
 				canonical: 'http://www.michaelmallari.com/design'
+			},
+			body: {
+				class: 'business'
 			}
 		},
 		// JSON-formatted data from Dribbble API

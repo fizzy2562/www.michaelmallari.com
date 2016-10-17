@@ -6,6 +6,8 @@ module.exports.index = function(req, res, next) {
 				title: 'Business (thinking + doing) | Michael Mallari, MBA, CSPO, CSM',
 				description: '',
 				canonical: 'http://www.michaelmallari.com/business'
+			}, body: {
+				class: 'business'
 			}
 		}
 	});
