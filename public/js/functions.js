@@ -1,6 +1,13 @@
 $(document).ready(function() {
-	$('.dribbble-shot a').each(function() {
+	$('.grid-rectangle').each(function() {
 		$(this).height( $(this).width() * 0.75 );
+	});
+	$('.vertical-middle').css({
+		'position' : 'relative',
+		// 'left' : '50%',
+		'top' : '50%',
+		// 'margin-left' : function() {return -$(this).outerWidth()/2},
+		'margin-top' : function() {return -$(this).outerHeight()/2;}
 	});
 
 
@@ -124,10 +131,16 @@ $(document).ready(function() {
 
 
 $(window).resize(function() {
-	$('.dribbble-shot a').each(function() {
+	$('.grid-rectangle').each(function() {
 		$(this).height( $(this).width() * 0.75 );
 	});
-
+	$('.vertical-middle').css({
+		'position' : 'relative',
+		// 'left' : '50%',
+		'top' : '50%',
+		// 'margin-left' : function() {return -$(this).outerWidth()/2},
+		'margin-top' : function() {return -$(this).outerHeight()/2;}
+	});
 
 
 	if ($(window).width() < 375) {

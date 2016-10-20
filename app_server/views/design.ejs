@@ -5,7 +5,7 @@
 		<ul class="row">
 <% for(var i = 0; i < dribbbleShots.length; i++) {%>
 			<li class="dribbble-shot col-xs-6 col-sm-4 col-md-3 col-lg-3" style="background-image: url('<%= dribbbleShots[i].images.normal %>');">
-				<a href="<%= dribbbleShots[i].html_url %>" target="_blank" class="hover-animation"><div class="dribbble-shot-description">
+				<a href="<%= dribbbleShots[i].html_url %>" target="_blank" class="grid-rect hover-animation"><div class="dribbble-shot-description">
 					<!--<%= dribbbleShots[i].title %>-->
 					<div class="views-count"><%= dribbbleShots[i].views_count %></div>
 					<div class="on-dribbble"><span>views on</span> <img src="/img/logo-dribbble.png" class="logo"></div>
