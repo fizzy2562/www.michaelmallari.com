@@ -1,19 +1,19 @@
 #nav-primary {
 	background: #fff;
-/*	
-	-moz-box-shadow: 0 0 12px 6px rgba(0,0,0,.33);
-		-webkit-box-shadow: 0 0 12px 6px rgba(0,0,0,.33);
-		-o-box-shadow: 0 0 12px 6px rgba(0,0,0,.33);
-		-ms-box-shadow: 0 0 12px 6px rgba(0,0,0,.33);
-		box-shadow: 0 0 12px 6px rgba(0,0,0,.33);
-*/
+	border-bottom: solid 1px #eeeff0; /* PMS 7547 C 7% */
 	position: fixed;
 	top: 0;
 	width: 100%;
 	z-index: 98;
 }
+.scroll-shadow {
+	-moz-box-shadow: 0 0 12px 6px rgba(19,30,41,.33);
+		-webkit-box-shadow: 0 0 12px 6px rgba(19,30,41,.33);
+		-o-box-shadow: 0 0 12px 6px rgba(19,30,41,.33);
+		-ms-box-shadow: 0 0 12px 6px rgba(19,30,41,.33);
+		box-shadow: 0 0 12px 6px rgba(19,30,41,.33);
+}
 #nav-primary ul {
-	border-bottom: solid 1px #eeeff0; /* PMS 7547 C 7% */
 	list-style: none;
 	margin: 0px auto;
 	padding: 0px;
@@ -42,6 +42,7 @@
 
 #page-container > #header {
 	min-height: 72px;
+	text-align: center;
 }
 #app-name {
 	display: inline-block;
@@ -143,6 +144,7 @@
 	#nav-primary {
 		background: #fff;
 		border-right: solid 1px #eeeff0; /* PMS 7547 C 7% */
+		border-bottom: none;
 		-moz-box-shadow: none;
 			-webkit-box-shadow: none;
 			-o-box-shadow: none;
@@ -151,13 +153,11 @@
 		height: 100%;
 		width: 72px;
 	}
-	#nav-primary ul {
-		border: none;
-	}
 	#page-container > #header {
 		height: 72px;
 		left: 72px;
 		position: relative;
+		text-align: left;
 	}
 	#app-name {
 		height: 72px;
