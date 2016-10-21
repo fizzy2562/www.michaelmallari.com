@@ -1,19 +1,7 @@
 <% include header.ejs %>
 
 <section id="content-1">
-	<div id="dribbble-shots">
-		<ul class="row">
-<% for(var i = 0; i < dribbbleShots.length; i++) {%>
-			<li class="dribbble-shot col-xs-6 col-sm-4 col-md-3 col-lg-3" style="background-image: url('<%= dribbbleShots[i].images.normal %>');">
-				<a href="<%= dribbbleShots[i].html_url %>" target="_blank" class="grid-rectangle hover-animation"><div class="dribbble-shot-description">
-					<!--<%= dribbbleShots[i].title %>-->
-					<div class="views-count"><%= dribbbleShots[i].views_count %></div>
-					<div class="on-dribbble"><span>views on</span> <img src="/img/logo-dribbble.png" class="logo"></div>
-				</div></a>
-			</li>
-<% } %>
-		</ul><!--/.row -->
-	</div>
+
 </section>
 
 
@@ -23,9 +11,9 @@
 <section id="content-2">
 	<div class="container">
 		<h2>Primary UX Research Methods Used:</h2>
-		<ul id="ux-research-methods" class="row">
+		<ul id="ux-research-methods" class="row list-capabilities">
 			<li class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-				<h3>Ask</h3>
+				<h4>Ask</h4>
 				<ul>
 					<li>Interviews</li>
 					<li>Surveys</li>
@@ -35,7 +23,7 @@
 				</ul>
 			</li>
 			<li class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-				<h3>Observe</h3>
+				<h4>Observe</h4>
 				<ul>
 					<li>Ethnographic observations</li>
 					<li>User testing</li>
@@ -45,7 +33,7 @@
 				</ul>
 			</li>
 			<li class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-				<h3>Inspect</h3>
+				<h4>Inspect</h4>
 				<ul>
 					<li>Guideline-based</li>
 					<li>Walkthroughs</li>
@@ -70,6 +58,26 @@
 			<li class="col-xs-12 col-sm-12 col-md-15 col-lg-15">Day 4: Prototype</li>
 			<li class="col-xs-12 col-sm-12 col-md-15 col-lg-15">Day 5: Test</li>
 		</ul>
+	</div>
+</section>
+
+
+
+
+
+<section id="content-4">
+	<div id="dribbble-shots">
+		<ul class="row">
+<% for(var i = 0; i < dribbbleShots.length; i++) {%>
+			<li class="dribbble-shot col-xs-6 col-sm-4 col-md-3 col-lg-3" style="background-image: url('<%= dribbbleShots[i].images.normal %>');">
+				<a href="<%= dribbbleShots[i].html_url %>" target="_blank" class="grid-rectangle hover-animation"><div class="dribbble-shot-description">
+					<!--<%= dribbbleShots[i].title %>-->
+					<div class="views-count"><%= dribbbleShots[i].views_count %></div>
+					<div class="on-dribbble"><span>views on</span> <img src="/img/logo-dribbble.png" class="logo"></div>
+				</div></a>
+			</li>
+<% } %>
+		</ul><!--/.row -->
 	</div>
 </section>
 

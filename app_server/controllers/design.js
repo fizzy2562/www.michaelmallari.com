@@ -20,7 +20,7 @@ var renderDesign = function(req, res, responseBody) {
 				canonical: 'http://www.michaelmallari.com/design'
 			},
 			body: {
-				class: 'business'
+				class: 'design'
 			}
 		},
 		// JSON-formatted data from Dribbble API
