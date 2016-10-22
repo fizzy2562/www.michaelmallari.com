@@ -262,6 +262,8 @@ $(window).resize(function() {
 
 
 $(window).scroll(function() {
+
+
 	if ($(window).width() < 375) {
 // alert("Window width < 375");
 
@@ -324,7 +326,12 @@ $(window).scroll(function() {
 	}
 	if ($(window).width() <= 991) {
 // alert("Window width <= 991");
-
+// Add shadow to header + stickiness after scroll away from position 0
+		if($(this).scrollTop() > 1) {
+			$('#nav-primary').addClass('scroll-shadow');
+		} else {
+			$('#nav-primary').removeClass('scroll-shadow');
+		}
 	}
 	if ($(window).width() >= 992) {
 // alert("Window width >= 992");
