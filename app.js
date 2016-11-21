@@ -12,6 +12,12 @@ var computationalRoutes = require('./app_server/routes/computational');
 var dataRoutes = require('./app_server/routes/data');
 var designRoutes = require('./app_server/routes/design');
 
+if(process.env.NODE_ENV === 'production') {
+	url_base = '//www.michaelmallari.com';
+} else {
+	url_base = 'http://localhost:3000';
+}
+
 var app = express();
 
 // view engine setup

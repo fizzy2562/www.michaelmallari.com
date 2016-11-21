@@ -1,12 +1,5 @@
-if(process.env.NODE_ENV === 'production') {
-	url_base = 'http://www.michaelmallari.com';
-} else {
-	url_base = 'http://localhost:3000';
-}
-
-
 // GET Home page - http://www.michaelmallari.com/
-module.exports.home = function(req, res, next) {
+module.exports.index = function(req, res, next) {
 	res.render('home', {
 		html: {
 			head: {

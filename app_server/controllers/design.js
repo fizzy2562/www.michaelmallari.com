@@ -1,10 +1,3 @@
-if(process.env.NODE_ENV === 'production') {
-	url_base = 'http://www.michaelmallari.com';
-} else {
-	url_base = 'http://localhost:3000';
-}
-
-
 var request = require('request');
 var requestOptions = {
 	url: "https://someurl.com",
@@ -32,7 +25,7 @@ var renderDesign = function(req, res, responseBody) {
 		dribbbleShots: responseBody
 	});
 };
-module.exports.design = function(req, res) {
+module.exports.index = function(req, res) {
 	var requestOptions;
 	var dribbbleShotsAPI;
 	// if (process.env.NODE_ENV === 'production') {

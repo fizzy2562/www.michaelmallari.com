@@ -1,9 +1,8 @@
 var express = require('express');
 var router = express.Router();
-var ctrlMain = require('../controllers/design');
+var ctrlDesign = require('../controllers/design');
 
-/* Get design landing page. */
-/* http://www.michaelmallari.com/design/ */
-router.get('/', ctrlMain.design);
+// GET Design landing page - http://www.michaelmallari.com/design/
+router.get('/', ctrlDesign.index);
 
 module.exports = router;

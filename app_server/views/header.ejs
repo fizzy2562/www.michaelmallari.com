@@ -10,17 +10,19 @@
 		<link rel="shortcut icon" href="<%= html.body.url_base %>/img/icon-mm-transparent.png">
 		<meta name="description" content="<%= html.head.description %>">
 		<link rel="canonical" href="<%= html.body.url_base %><%= html.head.url_path %>">
-		<meta name="twitter:card" content="summary">
-		<meta name="twitter:site" content="@MichaelMallari">
-		<meta property="og:title" content="<%= html.head.title %> | Michael Mallari, MBA, CSPO, CSM">
 		<meta property="og:type" content="website">
+		<meta property="og:title" content="<%= html.head.title %> | Michael Mallari, MBA, CSPO, CSM">
+		<meta property="og:description" content="<%= html.head.description %>">
 		<meta property="og:url" content="<%= html.body.url_base %><%= html.head.url_path %>">
 		<meta property="og:description" content="<%= html.head.description %>">
-		<script src="<%= html.body.url_base %>/js/angular.min.js"></script>
-		<script src="<%= html.body.url_base %>/js/app-angular.js"></script>
+		<meta name="twitter:card" content="summary">
+		<meta name="twitter:site" content="@MichaelMallari">
+		<meta name="twitter:title" content="<%= html.head.title %> | Michael Mallari, MBA, CSPO, CSM">
 		<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Merriweather+Sans:400,700,800|Open+Sans:300,400,600,700|Lato:100,300">
 		<link rel="stylesheet" href="<%= html.body.url_base %>/css/bootstrap.min.css">
 		<link rel="stylesheet" href="<%= html.body.url_base %>/css/style.min.css">
+		<script src="<%= html.body.url_base %>/js/angular.min.js"></script>
+		<script src="<%= html.body.url_base %>/js/app-angular.js"></script>
 <% include google-analytics-1.ejs %>
 	</head>
 
@@ -30,7 +32,6 @@
 
 	<body class="<%= html.body.class %>" ng-app="michaelmallariApp">
 <% include google-analytics-2.ejs %>
-
 		<div id="page-container">
 			<nav id="nav-primary">
 				<ul><li><a href="<%= html.body.url_base %>/"><img src="<%= html.body.url_base %>/img/logo-mm-pms2028c-cutout.svg" class="logo" alt="Michael Mallari, MBA, CSPO, CSM" title="Michael Mallari, MBA, CSPO, CSM"></a></li><li><a href="<%= html.body.url_base %>/design/"><img src="<%= html.body.url_base %>/img/icon-design.svg" alt="Design [thinking + doing]" title="Design [thinking + doing]"></a></li><li><a href="<%= html.body.url_base %>/computational/"><img src="<%= html.body.url_base %>/img/icon-computational.svg" alt="Computational [thinking + doing]" title="Computational [thinking + doing]"></a></li><li><a href="<%= html.body.url_base %>/data/"><img src="<%= html.body.url_base %>/img/icon-data.svg" alt="Data [thinking + doing]" title="Data [thinking + doing]"></a></li><li><a href="<%= html.body.url_base %>/business/"><img src="<%= html.body.url_base %>/img/icon-business.svg" alt="Business (thinking + doing)" title="Business [thinking + doing]"></a></li></ul>

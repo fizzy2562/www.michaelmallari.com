@@ -1,10 +1,3 @@
-if(process.env.NODE_ENV === 'production') {
-	url_base = 'http://www.michaelmallari.com';
-} else {
-	url_base = 'http://localhost:3000';
-}
-
-
 // GET Computational landing page - http://www.michaelmallari.com/computational/
 module.exports.index = function(req, res, next) {
 	res.render('computational', {
