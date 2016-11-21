@@ -1,14 +1,22 @@
-// GET Computational landing page - http://www.michaelmallari.com/computational
+if(process.env.NODE_ENV === 'production') {
+	url_base = 'http://www.michaelmallari.com';
+} else {
+	url_base = 'http://localhost:3000';
+}
+
+
+// GET Computational landing page - http://www.michaelmallari.com/computational/
 module.exports.index = function(req, res, next) {
 	res.render('computational', {
 		html: {
 			head: {
-				title: 'Computational (thinking + doing) | Michael Mallari, MBA, CSPO, CSM',
-				description: 'Michael developed an interest in CS in high school, pursued a BS degree in CS, and accumulated over ten years of experience as a developer.',
-				canonical: 'http://www.michaelmallari.com/computational'
+				title: 'Computational [thinking + doing]',
+				description: 'Michael developed an interest in CS in high school, pursued a BS degree in CS, and accumulated over ten years of experience as a professional developer.',
+				url_path: '/computational/'
 			},
 			body: {
-				class: 'computational'
+				class: 'computational',
+				url_base
 			}
 		}
 	});

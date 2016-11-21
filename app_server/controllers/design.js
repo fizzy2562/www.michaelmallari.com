@@ -1,3 +1,10 @@
+if(process.env.NODE_ENV === 'production') {
+	url_base = 'http://www.michaelmallari.com';
+} else {
+	url_base = 'http://localhost:3000';
+}
+
+
 var request = require('request');
 var requestOptions = {
 	url: "https://someurl.com",
@@ -7,20 +14,18 @@ var requestOptions = {
 }
 
 
-
-
-
-// GET Design landing page - http://www.michaelmallari.com/design
+// GET Design landing page - http://www.michaelmallari.com/design/
 var renderDesign = function(req, res, responseBody) {
 	res.render('design', {
 		html: {
 			head: {
-				title: 'Design (thinking + doing) | Michael Mallari, MBA, CSPO, CSM',
+				title: 'Design (thinking + doing)',
 				description: 'Done properly, design can transform businesses and be a source of competitive advantage. And the hallmark of a great designer is the ability to empathize with users through research.',
-				canonical: 'http://www.michaelmallari.com/design'
+				url_path: '/design/'
 			},
 			body: {
-				class: 'design'
+				class: 'design',
+				url_base
 			}
 		},
 		// JSON-formatted data from Dribbble API

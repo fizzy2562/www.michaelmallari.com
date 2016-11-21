@@ -1,13 +1,21 @@
-// GET Home page - http://www.michaelmallari.com
+if(process.env.NODE_ENV === 'production') {
+	url_base = 'http://www.michaelmallari.com';
+} else {
+	url_base = 'http://localhost:3000';
+}
+
+
+// GET Home page - http://www.michaelmallari.com/
 module.exports.home = function(req, res, next) {
 	res.render('home', {
 		html: {
 			head: {
-				title: 'Michael Mallari, MBA, CSPO, CSM | Hybrid thinker + doer',
+				title: 'Hybrid thinker + doer',
 				description: 'Hybrid product manager, designer, and developer. Launched digital products for American Express, Ford, Hasbro, Marriott, Marvel, Ralph Lauren, and others.',
-				canonical: 'http://www.michaelmallari.com'
+				url_path: '/'
 			}, body: {
-				class: 'home'
+				class: 'home',
+				url_base
 			}
 		}
 	});
@@ -17,16 +25,17 @@ module.exports.home = function(req, res, next) {
 
 
 
-// GET About page - http://www.michaelmallari.com/about
+// GET About page - http://www.michaelmallari.com/about/
 module.exports.about = function(req, res, next) {
 	res.render('default', {
 		html: {
 			head: {
-				title: 'About Michael Mallari, MBA, CSPO, CSM',
+				title: 'About',
 				description: 'Michael leverages over 15 years of product, design, and engineering experience to deliver delightful digital customer experiences that align with business goals.',
-				canonical: 'http://www.michaelmallari.com/about'
+				url_path: '/about/'
 			}, body: {
-				class: 'default'
+				class: 'default',
+				url_base
 			}
 		}
 	});

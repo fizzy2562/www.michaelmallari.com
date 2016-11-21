@@ -211,6 +211,9 @@ $(window).resize(function() {
 		$('#content').each(function() {
 			$(this).width( $(window).width() );
 		});
+		$('#page-container > #footer').each(function() {
+			$(this).width( $(window).width() );
+		});
 	}
 	if ($(window).width() >= 992) {
 // alert("Window width >= 992");
@@ -218,6 +221,9 @@ $(window).resize(function() {
 			$(this).width( $(window).width() - 144);
 		});
 		$('#content').each(function() {
+			$(this).width( $(window).width() - 144);
+		});
+		$('#page-container > #footer').each(function() {
 			$(this).width( $(window).width() - 144);
 		});
 	}
@@ -247,6 +253,9 @@ $(window).resize(function() {
 			$(this).width( $(window).width() - 168);
 		});
 		$('#content').each(function() {
+			$(this).width( $(window).width() - 168);
+		});
+		$('#page-container > #footer').each(function() {
 			$(this).width( $(window).width() - 168);
 		});
 	}
