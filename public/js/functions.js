@@ -11,7 +11,6 @@ $(document).ready(function() {
 	});
 
 
-
 	if ($(window).width() < 375) {
 // alert("Window width < 375");
 

@@ -3,7 +3,7 @@ module.exports.index = function(req, res, next) {
 	res.render('business', {
 		html: {
 			head: {
-				title: 'Business [thinking + doing]',
+				title: 'Business thinking + business doing',
 				description: '',
 				url_path: '/business/'
 			}, body: {
