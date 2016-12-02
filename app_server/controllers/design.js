@@ -12,7 +12,7 @@ var renderDesign = function(req, res, responseBody) {
 	res.render('design', {
 		html: {
 			head: {
-				title: 'Design thinking + design doing',
+				title: 'Design thinking + doing',
 				description: 'Done properly, design can transform businesses and be a source of competitive advantage. And the hallmark of a great designer is the ability to empathize with users through research.',
 				url_path: '/design/'
 			},
