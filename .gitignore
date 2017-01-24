@@ -1,5 +1,6 @@
 .DS_Store
 npm-debug.log
+/node_modules/*
 www-michaelmallari-com.sublime-project
 www-michaelmallari-com.sublime-workspace
 config.codekit3
