@@ -12,7 +12,7 @@ $(document).ready(function() {
 		$(this).height( $(this).width() * 0.8 );
 	});
 	$('.vertical-middle').css({
-		'margin-top' : function() { return -$(this).outerHeight()/2; }
+		'margin-top' : function() { return -$(this).outerHeight() / 2; }
 	});
 
 
@@ -154,7 +154,7 @@ $(window).resize(function() {
 		$(this).height( $(this).width() * 0.75 );
 	});
 	$('.vertical-middle').css({
-		'margin-top' : function() {return -$(this).outerHeight()/2;}
+		'margin-top' : function() { return -$(this).outerHeight() / 2; }
 	});
 
 

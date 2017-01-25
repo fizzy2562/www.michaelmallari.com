@@ -43,23 +43,22 @@
 }
 .skew-outer-opposite {
 	position: relative;
-	top: -4em;
-	-webkit-transform: skewY(-4deg);
-	-moz-transform: skewY(-4deg);
-	-ms-transform: skewY(-4deg);
-	-o-transform: skewY(-4deg);
-	transform: skewY(-4deg);
+	-webkit-transform: skewY(-2.4deg);
+	-moz-transform: skewY(-2.4deg);
+	-ms-transform: skewY(-2.4deg);
+	-o-transform: skewY(-2.4deg);
+	transform: skewY(-2.4deg);
 	-webkit-backface-visibility: hidden;
 	backface-visibility: initial;
 }
 .skew-inner-opposite {
 	position: relative;
 	top: 4em;
-	-webkit-transform: skewY(4deg);
-	-moz-transform: skewY(4deg);
-	-ms-transform: skewY(4deg);
-	-o-transform: skewY(4deg);
-	transform: skewY(4deg);
+	-webkit-transform: skewY(2.4deg);
+	-moz-transform: skewY(2.4deg);
+	-ms-transform: skewY(2.4deg);
+	-o-transform: skewY(2.4deg);
+	transform: skewY(2.4deg);
 	-webkit-backface-visibility: hidden;
 	backface-visibility: initial;
 }
@@ -206,7 +205,8 @@
 
 
 #garage {
-	padding: 120px 0px !important;
+	padding: 136px 0px 176px 0px !important;
+
 }
 #garage .container {
 	
@@ -238,10 +238,13 @@
 
 #summary {
 	background: #131e29;
-	bottom: -80px;
-	margin-top: 5em;
 }
-
+#summary > div {
+	background: #131e29;
+	height: 80px;
+	position: relative;
+	top: -40px;
+}
 
 
 
