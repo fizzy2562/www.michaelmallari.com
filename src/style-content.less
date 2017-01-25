@@ -2,12 +2,15 @@
 	background: #c6dae7;
 	min-height: 320px;
 }
+.container-inner {
+
+}
 .bg-dark * {
 	color: #fff;
 }
 .tag {
 	background: #009cb6;
-	color: #fff;
+	color: #78d5e1; /* PMS 2225 C */
 	display: inline-block;
 	font-size: 9px;
 	font-weight: 600;
@@ -63,6 +66,35 @@
 
 
 
+.branding .logo-mm {
+	height: 64px;
+	margin-bottom: 16px;
+	width: auto;
+}
+.branding h2,
+.branding h3 {
+	line-height: 16px;
+	margin: 0px;
+	text-transform: uppercase;
+}
+.branding h2 {
+	font-size: 12px;
+	font-weight: 400;
+	letter-spacing: 0.04em;
+}
+.branding h3 {
+	color: #5b6770; /* PMS 431 C */
+	font-size: 10px;
+	letter-spacing: 0.2em;
+	margin-bottom: 40px;
+}
+.bg-dark .branding h3 {
+	color: #a6bbc8;
+}
+
+
+
+
 #intro {
 	background: #131e29;
 }
@@ -72,34 +104,13 @@
 #intro h1 {
 	margin: 80px 0px;
 }
-#intro h2,
-#intro h3 {
-	line-height: 16px;
-	margin: 0px;
-	text-transform: uppercase;
-}
-#intro h2 {
-	font-size: 12px;
-	font-weight: 400;
-	letter-spacing: 0.04em;
-}
-#intro h3 {
-	color: #a6bbc8;
-	font-size: 10px;
-	letter-spacing: 0.2em;
-}
-#intro img {
-	height: 64px;
-	margin-bottom: 24px;
-	width: auto;
-}
 
 
 
 
 #outcome-driven {
-	background: url('/img/bg-analytics.jpg') center no-repeat;
-	background-size: cover;
+	background: url('/img/bg-analytics.jpg') top center no-repeat;
+	background-size: 300%;
 }
 #outcome-driven .container {
 	
@@ -208,8 +219,8 @@
 }
 #garage li {
 	background: #a6bbc8;
-	border-right: solid 1px #c6dae7;
-	border-bottom: solid 1px #c6dae7;
+	border-right: solid 2px #c6dae7;
+	border-bottom: solid 2px #c6dae7;
 	margin: 0px;
 	padding: 0px;
 	text-align: center;
@@ -227,13 +238,18 @@
 
 
 #summary {
-	background: #a6bbc8;
+	background: #fff;
+	padding-bottom: 5em;
+	text-align: center;
 }
 #summary > div {
-	background: #a6bbc8;
-	height: 80px;
+	background: #fff;
+	height: 72px;
 	position: relative;
 	top: -40px;
+}
+#summary p {
+
 }
 
 
@@ -312,6 +328,9 @@
 	#content {
 		margin: 0px 80px;
 	}
+	.container-inner {
+		margin: 0px 160px;
+	}
 	.tag {
 		font-size: 12px;
 		font-weight: 600;
@@ -342,6 +361,10 @@
 		height: 64px;
 		margin-bottom: 24px;
 		width: auto;
+	}
+	#outcome-driven {
+		background: url('/img/bg-analytics.jpg') center no-repeat;
+		background-size: cover;
 	}
 	#outcome-driven .container > div {
 		width: 50%;
