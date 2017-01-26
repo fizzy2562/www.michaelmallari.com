@@ -1,85 +1,45 @@
-#nav-primary {
-	display: none;
-	background: #fff;
-	border-bottom: solid 1px #eeeff0; /* PMS 7547 C 7% */
-	position: fixed;
-	top: 0;
-	width: 100%;
-	z-index: 98;
-}
-.scroll-shadow {
-	border-bottom: none !important;
-	-moz-box-shadow: 0 0 12px 6px rgba(19,30,41,.33);
-		-webkit-box-shadow: 0 0 12px 6px rgba(19,30,41,.33);
-		-o-box-shadow: 0 0 12px 6px rgba(19,30,41,.33);
-		-ms-box-shadow: 0 0 12px 6px rgba(19,30,41,.33);
-		box-shadow: 0 0 12px 6px rgba(19,30,41,.33);
-	-moz-transition: border 0.4s ease, box-shadow 0.4s ease; 
-		-webkit-transition: border 0.4s ease, box-shadow 0.4s ease;
-		-o-transition: border 0.4s ease, box-shadow 0.4s ease; 
-		-ms-transition: border 0.4s ease, box-shadow 0.4s ease; 
-		transition: border 0.4s ease, box-shadow 0.4s ease; 
-}
-#nav-primary ul {
-	list-style: none;
-	margin: 0px auto;
-	padding: 0px;
-	width: 100%;
-}
-#nav-primary li {
-	display: inline-block;
-	height: 60px;
-	list-style: none;
-	margin: 0px;
-	padding: 0px;
-	text-align: center;
-	width: 20%;
-}
-#nav-primary li:first-child { 
-	text-align: left;
-}
-#nav-primary img {
-	height: auto;
-	margin: 0px auto;
-	width: 60px;
-}
-
-
-
-
-
 #page-container > #header {
-	display: none;
-	min-height: 72px;
-	text-align: center;
-	z-index: 2;
+	left: 0px;
+	position: fixed;
+	top: 0px;
+	width: 80px;
 }
-#app-name {
-	display: inline-block;
-	height: 72px;
-	margin: 0px;
-	padding: 1.45em 0em 0em 0em;
-	text-align: center;
+#page-container > #header img {
+	height: auto;
+	width: 100%;
 }
-#app-name h2 {
-	color: #009cb6;
-	display: block;
-	font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
-	font-size: 0.7em;
-	font-weight: 400;
-	letter-spacing: 0.025em;
-	margin: 0px;
-}
-#app-name h3 {
-	color: #eb3300;
-	display: block;
-	font-family: 'Merriweather Sans', 'Helvetica Neue', sans-serif;
-	font-size: 1.4em;
-	font-weight: 800;
-	letter-spacing: -0.01em;
+#nav-primary {
 	margin: 0px;
 	padding: 0px;
 }
+#nav-primary > ul {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+#nav-primary > ul li {
+	display: inline-block;
+	height: 80px;
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+	width: 100%;
+}
+#nav-primary a {
+	background: none;
+	color: #131e29 !important;
+	display: block;
+	font-family: 'Montserrat', 'Helvetica Neue', sans-serif;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 80px;
+	text-decoration: none !important;
+	text-transform: uppercase;
+}
+#nav-primary a:hover {
+	background: #c6dae7;
+}
+
 
 
 
@@ -94,13 +54,7 @@
 
 }
 @media (min-width: 375px) {
-	#nav-primary li {
-		height: 72px;
-		width: 72px;
-	}
-	#nav-primary img {
-		width: 72px;
-	}
+
 }
 @media (min-width: 375px) and (max-width: 413px) {
 
@@ -139,36 +93,13 @@
 
 }
 @media (min-width: 768px) and (max-width: 991px) {
-	#nav-primary li {
-		height: 80px;
-		width: 80px;
-	}
-	#nav-primary img {
-		width: 80px;
-	}
+
 }
 @media (max-width: 991px) {
 
 }
 @media (min-width: 992px) {
-	#nav-primary {
-		background: #fff;
-		border-right: solid 1px #eeeff0; /* PMS 7547 C 7% */
-		border-bottom: none;
-		-moz-box-shadow: none;
-			-webkit-box-shadow: none;
-			-o-box-shadow: none;
-			-ms-box-shadow: none;
-			box-shadow: none;
-		height: 100%;
-		width: 72px;
-	}
-	#page-container > #header {
-		height: 72px;
-		left: 72px;
-		position: relative;
-		text-align: left;
-	}
+
 }
 @media (min-width: 992px) and (max-width: 1023px)  {
 
@@ -186,20 +117,7 @@
 
 }
 @media (min-width: 1200px) {
-	#nav-primary {
-		width: 80px;
-	}
-	#nav-primary li {
-		height: 80px;
-		width: 80px;
-	}
-	#nav-primary img {
-		width: 80px;
-	}
-	#page-container > #header {
-		height: 80px;
-		left: 80px;
-	}
+
 }
 @media (min-width: 1200px) and (max-width: 1399px) {
 
