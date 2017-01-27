@@ -2,7 +2,7 @@
 <html lang="en-us">
 	<head prefix="og: http://ogp.me/ns/website#">
 <% include meta-tags.ejs %>
-<!--		<link rel="stylesheet" href="<%= html.body.url_base %>/css/style-<%= html.body.class %>.min.css">-->
+<!--		<link rel="stylesheet" href="/css/style-home.min.css">-->
 <% include google-tag-manager-1.ejs %>
 	</head>
 
@@ -13,28 +13,17 @@
 
 
 
-	<body class="<%= html.body.class %>">
+	<body class="home">
 <% include google-tag-manager-2.ejs %>
-		<div id="page-container">		
-			<header id="header">
+		<div id="page-container">
 <% include header.ejs %>
-			</header>
-<!--/#page-container > #header -->
-
-
-
-
-
-
-
-
 			<div id="content">
 				<section id="intro" class="bg-dark height-full">
 					<div class="container">
 						<h1>Need to build a product team or accelerate your existing team's performance? Say hello to your <a href="">#SmartCreative</a>.</h1>
 
 						<div class="branding">
-							<a href="<%= html.body.url_base %>/"><img src="/img/logo-mm-pms2028c-cutout.svg" class="logo-mm" alt="Hybrid thinker + doer | Michael Mallari, MBA, CSPO, CSM" title="Hybrid thinker + doer | Michael Mallari, MBA, CSPO, CSM"></a>
+							<a href="/"><img src="/img/logo-mm-pms2028c-cutout.svg" class="logo-mm" alt="Hybrid thinker + doer | Michael Mallari, MBA, CSPO, CSM" title="Hybrid thinker + doer | Michael Mallari, MBA, CSPO, CSM"></a>
 
 							<h2>Michael Mallari, MBA, CSPO, CSM</h2>
 							<h3>Hybrid thinker + doer</h3>
@@ -101,57 +90,7 @@
 
 
 
-			<footer id="footer">
-				<section id="garage">
-					<!-- <img src="/img/mock-scholarathlete-ipad-1.png" class="mock-ipad"> -->
-					<div class="container row">
-						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-							<span class="tag">Hands-on</span>
-							<h2>Not affraid of getting dirty in the proverbial garage</h2>
-							<p>While Michael has held cushy corporate jobs, he is also no stranger to being lean and scrappy. He has spent many hours in the &ldquo;coffice&rdquo;&mdash;<strong>building</strong> (coding and designing) and <strong>validating</strong> startup/product ideas. Here's a list of entrepreneurial ventures he has been involved in:</p>
-						</div>
-
-						<div class="col-xs-12 col-sm-12 col-md-offset-1 col-md-5 col-lg-offset-1 col-lg-5">
-							<ul id="startups">
-								<li class="col-xs-6 col-sm-4 col-md-4 col-lg-4 grid-rectangle"><img src="/img/logo-credibly.png" class="logo vertical-middle"></li>
-								<li class="col-xs-6 col-sm-4 col-md-4 col-lg-4 grid-rectangle"><img src="/img/logo-invision.png" class="logo vertical-middle"></li>
-								<li class="col-xs-6 col-sm-4 col-md-4 col-lg-4 grid-rectangle"><img src="/img/logo-blackmamba.png" class="logo vertical-middle"></li>
-								<li class="col-xs-6 col-sm-4 col-md-4 col-lg-4 grid-rectangle"><img src="/img/logo-framer.png" class="logo vertical-middle"></li>
-								<li class="col-xs-6 col-sm-4 col-md-4 col-lg-4 grid-rectangle"><img src="/img/logo-parkingskillz.png" class="logo vertical-middle"></li>
-								<li class="col-xs-6 col-sm-4 col-md-4 col-lg-4 grid-rectangle"><img src="/img/logo-scholarathlete.png" class="logo vertical-middle"></li>
-								<li class="col-xs-6 col-sm-4 col-md-4 col-lg-4 grid-rectangle"><img src="/img/logo-screechowl.png" class="logo vertical-middle"></li>
-								<li class="hidden-xs col-sm-4 col-md-4 col-lg-4 grid-rectangle"><img src="/img/logo-topmbaapplicants.png" class="logo vertical-middle"></li>
-								<li class="col-xs-6 col-sm-4 col-md-4 col-lg-4 grid-rectangle"><img src="/img/logo-worklifeedge.png" class="logo vertical-middle"></li>
-							</ul>
-							<div class="clearfix"></div>
-						</div>
-					</div>
-				</section>
-
-
-
-
-				<div class="skew-outer-opposite">&nbsp;</div>
-				<section id="summary">
-					<div class="container">
-						<div class="container-inner">
-							<div class="branding">
-								<a href="<%= html.body.url_base %>/"><img src="/img/logo-mm-pms2028c-cutout.svg" class="logo-mm" alt="Hybrid thinker + doer | Michael Mallari, MBA, CSPO, CSM" title="Hybrid thinker + doer | Michael Mallari, MBA, CSPO, CSM"></a>
-
-								<h2>Michael Mallari, MBA, CSPO, CSM</h2>
-								<h3>Hybrid thinker + doer</h3>
-							</div>
-
-							<p>Michael leverages over 15 years of product, design, and engineering experience to help organizations&mdash;ranging from early-stage startups to Fortune 500 companies&mdash;deliver delightful digital customer experiences that align with business goals. <a href="">#SmartCreative</a></p>
-
-							<a href="mailto:hello@michaelmallari.com" class="btn btn-default btn-lg hover-animation">Let's work together</a>
-						</div>
-					</div>
-				</section>
-				<div id="ipad-mock"></div>
-				<section id="hello"><p>Say&nbsp;hello.&nbsp;&nbsp;<a href="mailto:hello@michaelmallari.com">hello@michaelmallari.com</a></p></section>
-			</footer>
-<!--/#page-container > #footer -->
+<% include footer.ejs %>
 		</div>
 <!--/#page-container -->
 
@@ -162,8 +101,8 @@
 
 
 
-		<script src="<%= html.body.url_base %>/node_modules/jquery/jquery.min.js"></script>
-		<script src="<%= html.body.url_base %>/node_modules/bootstrap/js/bootstrap.min.js"></script>
-		<script src="<%= html.body.url_base %>/js/functions.min.js"></script>
+		<script src="/node_modules/jquery/jquery.min.js"></script>
+		<script src="/node_modules/bootstrap/js/bootstrap.min.js"></script>
+		<script src="/js/functions.min.js"></script>
 	</body>
 </html>
