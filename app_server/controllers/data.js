@@ -5,6 +5,27 @@ var requestOptions = {
 	json: {},
 	qs: {}
 }
+var section_hands_on = {
+	heading: 'Not affraid of getting dirty in the proverbial garage',
+	copy: 'While Michael has held cushy corporate jobs, he is also no stranger to being lean and scrappy. He has spent many hours in the “coffice”—building (coding and designing) and validating startup/product ideas. Heres a list of entrepreneurial ventures he has been involved in:',
+	logos: [
+		{  name: 'Credibly', alias: 'credibly'  },
+		{  name: 'Cup of Wifi', alias: 'cupofwifi'  },
+		{  name: 'Black Mamba', alias: 'blackmamba' },
+		{  name: 'Pamela Kay', alias: 'pamelakay' },
+		{  name: 'ParkingSkillz', alias: 'parkingskillz' },
+		{  name: 'Scholar Athlete Venture', alias: 'scholarathlete' },
+		{  name: 'Screech Owl', alias: 'screechowl' },
+		{  name: 'Top MBA Applicants', alias: 'topmbaapplicants' },
+		{  name: 'WorkLifeEdge', alias: 'worklifeedge' }
+	]
+}
+
+
+
+
+
+
 
 
 // GET Data landing page - http://www.michaelmallari.com/data/
@@ -15,9 +36,18 @@ module.exports.index = function(req, res, next) {
 			description: 'During his undergraduate studies in CS, Michael developed a solid foundation in data, databases, and ER modeling. He continued his interests in data, models, and data-driven decison-making during his MBA studies.',
 			url_base,
 			url_path: '/data/'
+		},
+		content: {
+			section_hands_on
 		}
 	});
 };
+
+
+
+
+
+
 
 
 // GET Data landing page - http://www.michaelmallari.com/data/lottery-ny-take5/
