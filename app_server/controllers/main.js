@@ -6,7 +6,7 @@ module.exports.index = function(req, res, next) {
 			description: 'Hybrid product manager, designer, and developer. Launched digital products for American Express, Ford, Hasbro, Marriott, Marvel, Ralph Lauren, and others.',
 			url_base,
 			url_path: '/'
-		}, 
+		},
 		content: {
 			section_hands_on: {
 				heading: 'Not affraid of getting dirty in the proverbial garage',
@@ -24,16 +24,5 @@ module.exports.index = function(req, res, next) {
 				]
 			}
 		}
-	});
-};
-
-
-
-
-
-// GET About page - http://www.michaelmallari.com/about/
-module.exports.about = function(req, res, next) {
-	res.render('default', {
-
 	});
 };

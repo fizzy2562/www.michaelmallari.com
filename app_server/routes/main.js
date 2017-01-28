@@ -5,7 +5,4 @@ var ctrlMain = require('../controllers/main');
 /* GET Home page - http://www.michaelmallari.com */
 router.get('/', ctrlMain.index);
 
-/* GET About page - http://www.michaelmallari.com/about */
-router.get('/about', ctrlMain.about);
-
 module.exports = router;

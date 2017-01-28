@@ -4,13 +4,12 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-require('./app_server/models/db');
+// require('./app_server/models/db');
 
 var mainRoutes = require('./app_server/routes/main');
-var businessRoutes = require('./app_server/routes/business');
-var computationalRoutes = require('./app_server/routes/computational');
-var dataRoutes = require('./app_server/routes/data');
-var designRoutes = require('./app_server/routes/design');
+// var computationalRoutes = require('./app_server/routes/computational');
+// var dataRoutes = require('./app_server/routes/data');
+// var designRoutes = require('./app_server/routes/design');
 
 if(process.env.NODE_ENV === 'production') {
 	url_base = 'http://www.michaelmallari.com';
@@ -37,10 +36,9 @@ app.use('/node_modules/jquery', express.static(__dirname + '/node_modules/jquery
 app.use('/node_modules/bootstrap', express.static(__dirname + '/node_modules/bootstrap/dist'));
 
 app.use('/', mainRoutes);
-app.use('/business', businessRoutes);
-app.use('/computational', computationalRoutes);
-app.use('/data', dataRoutes);
-app.use('/design', designRoutes);
+// app.use('/computational', computationalRoutes);
+// app.use('/data', dataRoutes);
+// app.use('/design', designRoutes);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

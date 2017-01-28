@@ -10,16 +10,11 @@ var requestOptions = {
 // GET Data landing page - http://www.michaelmallari.com/data/
 module.exports.index = function(req, res, next) {
 	res.render('data', {
-		html: {
-			head: {
-				title: 'Data-driven thinking + doing',
-				description: 'During his undergraduate studies in CS, Michael developed a solid foundation in data, databases, and ER modeling. He continued his interests in data, models, and data-driven decison-making during his MBA studies.',
-				url_path: '/data/'
-			},
-			body: {
-				class: 'data',
-				url_base
-			}
+		meta: {
+			title: 'Data-driven thinking + doing',
+			description: 'During his undergraduate studies in CS, Michael developed a solid foundation in data, databases, and ER modeling. He continued his interests in data, models, and data-driven decison-making during his MBA studies.',
+			url_base,
+			url_path: '/data/'
 		}
 	});
 };
@@ -28,16 +23,11 @@ module.exports.index = function(req, res, next) {
 // GET Data landing page - http://www.michaelmallari.com/data/lottery-ny-take5/
 var renderTake5 = function(req, res, responseBody) {
 	res.render('data-lottery-ny-take5', {
-		html: {
-			head: {
-				title: 'Analytics tool for Take 5 (New York State) lottery drawings',
-				description: 'With a 1:575,757 chance of winning the New York State Take 5 lottery jackpot, this tool helps you increase your odds of winning.',
-				url_path: '/data/lottery-ny-take5/'
-			},
-			body: {
-				class: 'data lottery-ny-take5',
-				url_base
-			}
+		meta: {
+			title: 'Analytics tool for Take 5 (New York State) lottery drawings',
+			description: 'With a 1:575,757 chance of winning the New York State Take 5 lottery jackpot, this tool helps you increase your odds of winning.',
+			url_base,
+			url_path: '/data/lottery-ny-take5/'
 		},
 		// JSON-formatted data from NY Open Data - Take 5 winning numbers
 		drawings: responseBody
