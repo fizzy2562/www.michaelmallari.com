@@ -22,19 +22,11 @@
 	padding: 0px;
 	text-align: center;
 }
-#garage li:nth-child(3),
-#garage li:nth-child(6),
-#garage li:nth-child(9) {
-	border-right: solid 2px #c6dae7;
-}
-#garage li:nth-child(7),
-#garage li:nth-child(8),
-#garage li:nth-child(9) {
-	border-bottom: solid 2px #c6dae7;
-}
 #garage li .logo {
 	height: auto;
-	width: 75%;
+	max-height: 64px;
+	max-width: 80px;
+	width: auto;
 }
 #garage .mock-ipad {
 	height: auto;
@@ -138,10 +130,23 @@
 
 }
 @media (max-width: 677px) {
-
+	#garage li:nth-child(2n) {
+		border-right: solid 2px #c6dae7;
+	}
+	#garage li:nth-last-child(1),
+	#garage li:nth-last-child(2) {
+		border-bottom: solid 2px #c6dae7;
+	}
 }
 @media (min-width: 678px) {
-
+	#garage li:nth-child(3n) {
+		border-right: solid 2px #c6dae7;
+	}
+	#garage li:nth-last-child(1),
+	#garage li:nth-last-child(2),
+	#garage li:nth-last-child(3) {
+		border-bottom: solid 2px #c6dae7;
+	}
 }
 @media (min-width: 678px) and (max-width: 767px) {
 
@@ -165,6 +170,12 @@
 	#garage {
 		padding: 136px 0px 176px 0px !important;
 
+	}
+	#garage li .logo {
+		height: auto;
+		max-height: 56px;
+		max-width: 64px;
+		width: auto;
 	}
 	#summary p {
 		font-size: 18px !important;
@@ -201,7 +212,7 @@
 		text-transform: none;
 	}
 	#sk-holder #sk-messenger-button {
-		right: 8px !important;
+		right: 7px !important;
 	}
 }
 @media (min-width: 992px) and (max-width: 1023px)  {
@@ -263,5 +274,10 @@
 
 }
 @media (min-width: 1400px) {
-
+	#garage li .logo {
+		height: auto;
+		max-height: 72px;
+		max-width: 88px;
+		width: auto;
+	}
 }
