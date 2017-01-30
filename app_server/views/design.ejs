@@ -90,14 +90,6 @@
 						</ul>
 					</div>
 				</section>
-
-
-
-
-
-
-
-
 			</div>
 <!--/#page-container > #content -->
 
@@ -122,5 +114,12 @@
 		<script src="<%= meta.url_base %>/node_modules/jquery/jquery.min.js"></script>
 		<script src="<%= meta.url_base %>/node_modules/bootstrap/js/bootstrap.min.js"></script>
 		<script src="<%= meta.url_base %>/js/functions.min.js"></script>
+		<script>
+			$(document).ready(function() {
+				$('.vertical-middle').css({
+					'margin-top' : function() { return -$(this).outerHeight() / 2; }
+				});
+			}
+		</script>
 	</body>
 </html>

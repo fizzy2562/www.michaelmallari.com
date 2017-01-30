@@ -20,7 +20,7 @@
 			<div id="content">
 				<section id="intro" class="bg-dark height-full">
 					<div class="container">
-						<h1>A <a href="">#SmartCreative</a> has deep technical knowledge&hellip;most likely a computer scientist. He doesn't just design concepts, he builds prototypes.</h1>
+						<h1>A <a href="">#SmartCreative</a> has deep technical knowledge &hellip; most likely a computer scientist. He doesn't just design concepts, he builds prototypes.</h1>
 
 						<div class="branding">
 							<a href="<%= meta.url_base %>/"><img src="/img/logo-mm-pms2028c-cutout.svg" class="logo-mm" alt="Hybrid thinker + doer | Michael Mallari, MBA, CSPO, CSM" title="Hybrid thinker + doer | Michael Mallari, MBA, CSPO, CSM"></a>
@@ -131,5 +131,12 @@
 		<script src="<%= meta.url_base %>/node_modules/jquery/jquery.min.js"></script>
 		<script src="<%= meta.url_base %>/node_modules/bootstrap/js/bootstrap.min.js"></script>
 		<script src="<%= meta.url_base %>/js/functions.min.js"></script>
+		<script>
+			$(document).ready(function() {
+				$('.vertical-middle').css({
+					'margin-top' : function() { return -$(this).outerHeight() / 2; }
+				});
+			}
+		</script>
 	</body>
 </html>
