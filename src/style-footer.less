@@ -54,6 +54,16 @@
 	padding-bottom: 5em;
 	text-align: center;
 }
+#summary .headshot {
+	-moz-border-radius: 25em;
+		-webkit-border-radius: 25em;
+		-o-border-radius: 25em;
+		-ms-border-radius: 25em;
+		border-radius: 25em;
+	height: 72px;
+	margin-bottom: 16px;
+	width: auto;
+}
 #summary p {
 
 }
@@ -141,7 +151,9 @@
 
 }
 @media (min-width: 678px) {
-
+	#summary .headshot {
+		height: 80px;
+	}
 }
 @media (min-width: 678px) and (max-width: 767px) {
 
@@ -232,6 +244,10 @@
 	#garage {
 		padding: 136px 0px 176px 0px !important;
 
+	}
+	#summary .headshot {
+		height: 96px;
+		margin-bottom: 16px;
 	}
 	#summary p {
 		font-size: 18px !important;
