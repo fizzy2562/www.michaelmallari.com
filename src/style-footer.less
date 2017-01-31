@@ -16,25 +16,17 @@
 	padding: 0px;
 }
 #garage li {
-	border-right: solid 2px #b7c9d3; /* PMS 5445 C */
-	border-bottom: solid 2px #b7c9d3;
+	background: #fff;
+	border: solid 1px #c6dae7;
 	margin: 0px;
 	padding: 0px;
 	text-align: center;
 }
 #garage li .logo {
 	height: auto;
-	max-height: 64px;
-	max-width: 80px;
+	max-height: 48px;
+	max-width: 64px;
 	width: auto;
-}
-#garage li:nth-child(3n) {
-	border-right: solid 2px #c6dae7;
-}
-#garage li:nth-last-child(1),
-#garage li:nth-last-child(2),
-#garage li:nth-last-child(3) {
-	border-bottom: solid 2px #c6dae7;
 }
 #garage .mock-ipad {
 	height: auto;
@@ -133,7 +125,10 @@
 
 }
 @media (min-width: 414px) {
-
+	#garage li .logo {
+		max-height: 56px;
+		max-width: 72px;
+	}
 }
 @media (min-width: 414px) and (max-width: 506px) {
 
@@ -151,6 +146,14 @@
 
 }
 @media (min-width: 678px) {
+	#garage ul {
+		margin: 0px auto;
+		width: 66%;
+	}
+	#garage li .logo {
+		max-height: 64px;
+		max-width: 80px;
+	}
 	#summary .headshot {
 		height: 80px;
 	}
@@ -178,11 +181,12 @@
 		padding: 136px 0px 176px 0px !important;
 
 	}
-	#garage li .logo {
-		height: auto;
-		max-height: 56px;
-		max-width: 64px;
+	#garage ul {
 		width: auto;
+	}
+	#garage li .logo {
+		max-height: 40px;
+		max-width: 48px;
 	}
 	#summary p {
 		font-size: 18px !important;
@@ -244,6 +248,10 @@
 	#garage {
 		padding: 136px 0px 176px 0px !important;
 
+	}
+	#garage li .logo {
+		max-height: 48px;
+		max-width: 64px;
 	}
 	#summary .headshot {
 		height: 96px;

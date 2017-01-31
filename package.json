@@ -28,6 +28,8 @@
     "jquery": "~3.1.0",
     "mongoose": "~4.6.1",
     "morgan": "~1.7.0",
+    "react": "~15.4.2",
+    "react-dom": "~15.4.2",
     "request": "^2.79.0",
     "rxjs": "5.0.0-rc.4",
     "serve-favicon": "~2.3.0",

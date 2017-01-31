@@ -3,6 +3,8 @@
 	<head prefix="og: http://ogp.me/ns/website#">
 <% include meta-tags.ejs %>
 		<link rel="stylesheet" href="<%= meta.url_base %>/css/style-data.min.css">
+		<script src="<%= meta.url_base %>/node_modules/react/react.min.js"></script>
+		<script src="<%= meta.url_base %>/node_modules/react-dom/react-dom.min.js"></script>
 <% include google-tag-manager-1.ejs %>
 	</head>
 
@@ -18,7 +20,7 @@
 		<div id="page-container">
 <% include header.ejs %>
 			<div id="content">
-				<section id="intro" class="bg-dark height-full">
+				<section id="intro" class="bg-dark height-half">
 					<div class="container">
 						<h1>A <a href="">#SmartCreative</a> is analytically smart. He is comfortable with data and can use it to make decisions &hellip; but doesn't let it take over.</h1>
 
@@ -71,12 +73,77 @@
 		<script src="<%= meta.url_base %>/node_modules/jquery/jquery.min.js"></script>
 		<script src="<%= meta.url_base %>/node_modules/bootstrap/js/bootstrap.min.js"></script>
 		<script src="<%= meta.url_base %>/js/functions.min.js"></script>
+		<script type="text/javascript">
+			var mountTarget = document.getElementById('d3-app');
+			var Post = React.createClass({
+				propTypes: {
+					user: React.PropTypes.string.isRequired,
+					content: React.PropTypes.string.isRequired,
+					id: React.PropTypes.number.isRequired,
+				},
+				render: function() {
+					return (
+						React.createElement('div',
+							{ className: 'post' },
+							React.createElement('h2',
+								{ className: 'postAuthor', id: this.props.id },
+								this.props.user, React.createElement('span',
+									{ className: 'postBody' },
+									this.props.content
+								)
+							),
+							this.props.children
+						)
+					);
+				}
+			});
+
+			var Comment = React.createClass({
+			propTypes: {
+			id: React.PropTypes.number.isRequired,
+			content: React.PropTypes.string.isRequired,
+			user: React.PropTypes.string.isRequired,
+			},
+			render: function() {
+			return (
+			React.createElement('div', {
+			className: 'comment'
+			},
+			React.createElement('h2', {
+			className: 'commentAuthor'
+			},
+			this.props.user,
+			React.createElement('span', {
+			className: 'commentContent'
+			},
+			this.props.content
+			)
+			)
+			)
+			);
+			}
+			});
+
+			var App = React.createElement(Post, {
+			id: 1,
+			content: " said: This is a post!",
+			user: 'mark',
+			},
+			React.createElement(Comment, {
+			id: 2,
+			user: 'bob',
+			content: " commented: wow! how cool!"
+			})
+			);
+
+			ReactDOM.render(App, mountTarget);
+		</script>
 		<script>
 			$(document).ready(function() {
 				$('.vertical-middle').css({
 					'margin-top' : function() { return -$(this).outerHeight() / 2; }
 				});
-			}
+			});
 		</script>
 	</body>
 </html>

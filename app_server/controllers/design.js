@@ -6,21 +6,21 @@ var requestOptions = {
 	qs: {}
 }
 var section_hands_on = {
-	heading: 'Not affraid of getting dirty in the proverbial garage',
-	copy: 'While Michael has held cushy corporate jobs, he is also no stranger to being lean and scrappy. He has spent many hours in the “coffice”—building (coding and designing) and validating startup/product ideas. Heres a list of entrepreneurial ventures he has been involved in:',
+	heading: 'Impact of high-fidelity and high-interactivity prototypes',
+	copy: 'There are two fundementally critical times when you should validate product ideas with customers: before you\'ve built the product and after you\'ve built the product. The higher the fidelity and interactivity, the better the communication and quality of learnings. As a former product designer at Nasdaq, Michael uses these proven tools to produce quality design artifacts with speed:',
 	logos: [
 		{  name: 'Adobe Photoshop', alias: 'photoshop'  },
 		{  name: 'Adobe Illustrator', alias: 'illustrator'  },
-		{  name: 'Lingo', alias: 'lingo' },
 		{  name: 'Sketch', alias: 'sketch' },
 		{  name: 'InVision', alias: 'invision' },
 		{  name: 'Framer', alias: 'framer' },
 		{  name: 'Flinto', alias: 'flinto' },
+		{  name: 'Lingo', alias: 'lingo' },
 		{  name: 'Zeplin', alias: 'zeplin' },
 		{  name: 'HTML 5', alias: 'html5' },
 		{  name: 'CSS 3', alias: 'css3' },
-		{  name: 'JS', alias: 'js' },
-		{  name: 'GitHUb', alias: 'github' }
+		{  name: 'Bootstrap', alias: 'bootstrap' },
+		{  name: 'Sass/Less', alias: 'sass-less' },
 	]
 }
 

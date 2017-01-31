@@ -33,8 +33,11 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 // make NPM packages accessible to HTML
-app.use('/node_modules/jquery', express.static(__dirname + '/node_modules/jquery/dist'));
 app.use('/node_modules/bootstrap', express.static(__dirname + '/node_modules/bootstrap/dist'));
+app.use('/node_modules/jquery', express.static(__dirname + '/node_modules/jquery/dist'));
+app.use('/node_modules/react', express.static(__dirname + '/node_modules/react/dist'));
+app.use('/node_modules/react-dom', express.static(__dirname + '/node_modules/react-dom/dist'));
+
 
 app.use('/', mainRoutes);
 app.use('/design', designRoutes);
