@@ -13,6 +13,7 @@ var section_hands_on = {
 		{  name: 'Python', alias: 'python' },
 		{  name: 'NumPy', alias: 'numpy' },
 		{  name: 'SciPy', alias: 'scipy' },
+		{  name: 'Pandas', alias: 'pandas' },
 		{  name: 'TensorFlow', alias: 'tensorflow' },
 		{  name: 'D3', alias: 'd3'  }
 	]

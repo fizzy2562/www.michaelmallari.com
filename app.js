@@ -10,6 +10,7 @@ var mainRoutes = require('./app_server/routes/main');
 var designRoutes = require('./app_server/routes/design');
 var computationalRoutes = require('./app_server/routes/computational');
 var dataRoutes = require('./app_server/routes/data');
+var principlesRoutes = require('./app_server/routes/principles');
 
 
 if(process.env.NODE_ENV === 'production') {
@@ -44,6 +45,7 @@ app.use('/', mainRoutes);
 app.use('/design', designRoutes);
 app.use('/computational', computationalRoutes);
 app.use('/data', dataRoutes);
+app.use('/principles', principlesRoutes);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
