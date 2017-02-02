@@ -16,6 +16,7 @@ if(process.env.NODE_ENV === 'production') {
 	url_base = 'http://www.michaelmallari.com';
 } else {
 	url_base = 'http://localhost:3000';
+	require('./env_variables');
 }
 
 var app = express();

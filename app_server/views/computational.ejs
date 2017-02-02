@@ -107,6 +107,18 @@
 	</div>
 </section>
 
+
+<ul>
+<% for(var i = 0; i < blogPostsAPI.posts.length; i++) { %>
+							<li>
+								<a href="<%= meta.url_base %>/computational/<%= blogPostsAPI.posts[i].slug %>"><%= blogPostsAPI.posts[i].title %></a>
+							</li>
+<% } %>
+</ul>
+
+
+
+
 			</div>
 <!--/#page-container > #content -->
 
