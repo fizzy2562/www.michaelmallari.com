@@ -9,7 +9,7 @@ $(document).ready(function() {
 		'min-height' : function() { return $(window).height() * 0.5; }
 	});
 	$('.grid-rectangle').each(function() {
-		$(this).height( $(this).width() * 0.8 );
+		$(this).height( $(this).width() * 0.75 );
 	});
 	$('.vertical-middle').css({
 		'margin-top' : function() { return -$(this).outerHeight() / 2; }
