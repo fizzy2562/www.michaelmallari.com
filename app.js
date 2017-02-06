@@ -6,11 +6,16 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 // require('./app_server/models/db');
 
+
+
+
 var mainRoutes = require('./app_server/routes/main');
 var designRoutes = require('./app_server/routes/design');
 var computationalRoutes = require('./app_server/routes/computational');
 var dataRoutes = require('./app_server/routes/data');
 var principlesRoutes = require('./app_server/routes/principles');
+
+
 
 
 if(process.env.NODE_ENV === 'production') {
@@ -36,10 +41,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // make NPM packages accessible to HTML
 app.use('/node_modules/bootstrap', express.static(__dirname + '/node_modules/bootstrap/dist'));
+app.use('/node_modules/d3', express.static(__dirname + '/node_modules/d3/build'));
 app.use('/node_modules/jquery', express.static(__dirname + '/node_modules/jquery/dist'));
 app.use('/node_modules/react', express.static(__dirname + '/node_modules/react/dist'));
 app.use('/node_modules/react-dom', express.static(__dirname + '/node_modules/react-dom/dist'));
-
 
 app.use('/', mainRoutes);
 app.use('/design', designRoutes);
