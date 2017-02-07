@@ -9,8 +9,8 @@ var section_hands_on = {
 	heading: 'Impact of high-fidelity and high-interactivity prototypes',
 	copy: 'There are two fundementally critical times when you should validate product ideas with customers: before you\'ve built the product and after you\'ve built the product. The higher the fidelity and interactivity, the better the communication and quality of learnings. As a former designer at American Express and Nasdaq, Michael rapidly produces quality design artifacts for both validation and production using the following:',
 	logos: [
-		{  name: 'Adobe Photoshop', alias: 'photoshop'  },
-		{  name: 'Adobe Illustrator', alias: 'illustrator'  },
+		{  name: 'Adobe Photoshop (Adobe Creative Suite)', alias: 'photoshop'  },
+		{  name: 'Adobe Illustrator (Adobe Creative Suite)', alias: 'illustrator'  },
 		{  name: 'Sketch', alias: 'sketch' },
 		{  name: 'InVision', alias: 'invision' },
 		{  name: 'Framer', alias: 'framer' },

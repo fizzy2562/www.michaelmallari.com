@@ -12,15 +12,15 @@ module.exports.index = function(req, res, next) {
 				heading: 'Not affraid of getting dirty in the proverbial garage',
 				copy: 'While Michael has held cushy corporate jobs, he is also no stranger to being in a startup environment. He has spent many hours in the “coffice”—building (coding and designing) and validating startup/product ideas. Heres a list of entrepreneurial ventures he has been involved in:',
 				logos: [
-					{  name: 'Credibly', alias: 'credibly'  },
-					{  name: 'Cup of Wifi', alias: 'cupofwifi'  },
-					{  name: 'Black Mamba', alias: 'blackmamba' },
-					{  name: 'Pamela Kay', alias: 'pamelakay' },
-					{  name: 'ParkingSkillz', alias: 'parkingskillz' },
-					{  name: 'Scholar Athlete Venture', alias: 'scholarathlete' },
-					{  name: 'Screech Owl', alias: 'screechowl' },
-					{  name: 'Top MBA Applicants', alias: 'topmbaapplicants' },
-					{  name: 'WorkLifeEdge', alias: 'worklifeedge' }
+					{  name: 'Credibly (Troy, MI)', alias: 'credibly'  },
+					{  name: 'Cup of Wifi (Minneapolis, MN)', alias: 'cupofwifi'  },
+					{  name: 'Black Mamba (Park City, UT)', alias: 'blackmamba' },
+					{  name: 'Pamela Kay (Astoria, NY)', alias: 'pamelakay' },
+					{  name: 'ParkingSkillz (New York, NY)', alias: 'parkingskillz' },
+					{  name: 'Scholar Athlete Venture (Washington, DC)', alias: 'scholarathlete' },
+					{  name: 'Screech Owl (Grand Forks, ND)', alias: 'screechowl' },
+					{  name: 'Top MBA Applicants (Cambridge, MA)', alias: 'topmbaapplicants' },
+					{  name: 'WorkLifeEdge (Boulder, CO)', alias: 'worklifeedge' }
 				]
 			}
 		}
