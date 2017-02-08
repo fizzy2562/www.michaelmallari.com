@@ -18,9 +18,9 @@ var section_hands_on = {
 		{  name: 'TensorFlow', alias: 'tensorflow' },
 		{  name: 'PHP', alias: 'php', url: '' },
 		{  name: 'Git', alias: 'git' },
-		{  name: 'GitHub', alias: 'github' },
 		{  name: 'AWS', alias: 'aws' },
-		{  name: 'Heroku', alias: 'heroku' }
+		{  name: 'Heroku', alias: 'heroku' },
+		{  name: 'Shopify', alias: 'shopify' }
 	]
 }
 
