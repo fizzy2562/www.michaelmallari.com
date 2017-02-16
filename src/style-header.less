@@ -44,13 +44,17 @@
 	text-decoration: none !important;
 	text-transform: uppercase;
 }
-#nav-primary a:hover,
-body.design #nav-primary li:nth-child(1) a,
-body.computational #nav-primary li:nth-child(2) a,
-body.data #nav-primary li:nth-child(3) a {
+#nav-primary a:hover {
 	background: #c6dae7;
 	border-top: solid 4px #768692; /* PMS 7544 C */
 	border-bottom: solid 4px #c6dae7;
+}
+body.design #nav-primary li:nth-child(1) a,
+body.computational #nav-primary li:nth-child(2) a,
+body.data #nav-primary li:nth-child(3) a {
+	background: #fff;
+	border-top: solid 4px #eb3300; /* PMS 7544 C */
+	border-bottom: solid 4px #fff;
 }
 
 
@@ -136,12 +140,15 @@ body.data #nav-primary li:nth-child(3) a {
 		border-left: solid 4px #fff;
 		line-height: 72px;
 	}
-	#nav-primary a:hover,
+	#nav-primary a:hover {
+		border-right: solid 4px #c6dae7;
+		border-left: solid 4px #768692; /* PMS 7544 C */
+	}
 	body.design #nav-primary li:nth-child(1) a,
 	body.computational #nav-primary li:nth-child(2) a,
 	body.data #nav-primary li:nth-child(3) a {
-		border-right: solid 4px #c6dae7;
-		border-left: solid 4px #768692; /* PMS 7544 C */
+		border-right: solid 4px #fff;
+		border-left: solid 4px #eb3300;
 	}
 }
 @media (min-width: 992px) and (max-width: 1023px)  {

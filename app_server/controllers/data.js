@@ -9,13 +9,15 @@ var section_hands_on = {
 	heading: 'Not affraid of getting dirty in the proverbial garage',
 	copy: 'While Michael has held cushy corporate jobs, he is also no stranger to being lean and scrappy. He has spent many hours in the “coffice”—building (coding and designing) and validating startup/product ideas. Heres a list of entrepreneurial ventures he has been involved in:',
 	logos: [
-		{  name: 'SQL', alias: 'sql' },
+		{  name: 'Tableau', alias: 'tableau' },
+		{  name: 'D3', alias: 'd3'  },
+		{  name: 'TensorFlow', alias: 'tensorflow' },
 		{  name: 'Python', alias: 'python' },
 		{  name: 'NumPy', alias: 'numpy' },
-		{  name: 'SciPy', alias: 'scipy' },
 		{  name: 'Pandas', alias: 'pandas' },
-		{  name: 'TensorFlow', alias: 'tensorflow' },
-		{  name: 'D3', alias: 'd3'  }
+		{  name: 'R', alias: 'r' },
+		{  name: 'Google Sheets', alias: 'sheets' },
+		{  name: 'Microsoft Excel', alias: 'excel' }
 	]
 }
 
