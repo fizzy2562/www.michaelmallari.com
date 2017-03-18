@@ -3,6 +3,9 @@
 	<head prefix="og: http://ogp.me/ns/website#">
 <% include meta-tags.ejs %>
 		<link rel="stylesheet" href="<%= meta.url_base %>/css/style-home.min.css">
+		<script src="<%= meta.url_base %>/node_modules/react/react.min.js"></script>
+		<script src="<%= meta.url_base %>/node_modules/react-dom/react-dom.min.js"></script>
+		<script src="<%= meta.url_base %>/node_modules/d3/d3.min.js"></script>
 <% include google-tag-manager-1.ejs %>
 	</head>
 
@@ -20,7 +23,7 @@
 			<div id="content">
 				<section id="intro" class="bg-dark height-half">
 					<div class="container">
-						<h1>Need to achieve product-market fit and get your MVP tests off the ground before building a team? Say hello to your <a href="" data-toggle="modal" data-target="#modal-smart-creative">#SmartCreative</a>.</h1>
+						<h1>Need to get your MVP tests off the ground and show progress on product-market fit? Say hello to your <a href="" data-toggle="modal" data-target="#modal-smart-creative">#SmartCreative</a>.</h1>
 
 						<div class="branding">
 							<a href="<%= meta.url_base %>/"><img src="/img/logo-mm-pms2028c-cutout.svg" class="logo-mm" alt="Hybrid thinker + doer | Michael Mallari, MBA, CSPO, CSM" title="Hybrid thinker + doer | Michael Mallari, MBA, CSPO, CSM"></a>
@@ -41,9 +44,10 @@
 				<section id="principles" class="height-3-4 skew-outer">
 					<div class="container skew-inner">
 						<div >
-							<span class="tag">Principles</span>
+							<span class="tag">Principles to Stand For</span>
 							<h2>It's never sufficient to just build out an idea.</h2>
 							<p>Metrics for success need to be defined&mdash;how the business will acquire/delight/retain customers, cultivate positive team morale, and deliver value to shareholders.</p>
+							<button src="/principles/" class="btn btn-default btn-lg hover-animation">Learn More</button>
 						</div>
 					</div>
 				</section>
